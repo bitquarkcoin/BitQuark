@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About BitQuark</source>
-        <translation>Par BitQuark</translation>
+        <source>About FairQuark</source>
+        <translation>Par FairQuark</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;BitQuark&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;BitQuark&lt;/b&gt; versija</translation>
+        <source>&lt;b&gt;FairQuark&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;FairQuark&lt;/b&gt; versija</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,7 +34,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 	<message>
         <location line="+0"/>
-        <source>The BitQuark developers</source>
+        <source>The FairQuark developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -67,7 +67,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your BitQuark addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your FairQuark addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -82,7 +82,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a BitQuark address</source>
+        <source>Sign a message to prove you own a FairQuark address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -107,7 +107,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified BitQuark address</source>
+        <source>Verify a message to ensure it was signed with a specified FairQuark address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -122,7 +122,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your BitQuark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your FairQuark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -248,7 +248,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BitQuarkS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FairQuarkS&lt;/b&gt;!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -275,8 +275,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>BitQuark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BitQuarks from being stolen by malware infecting your computer.</source>
-        <translation>BitQuark aizvērsies, lai pabeigtu šifrēšanu. Atcerieties, ka maciņa šifrēšana nevar pilnībā novērst bitkoinu zādzību, ko veic datorā ieviesušās kaitīgas programmas.</translation>
+        <source>FairQuark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FairQuarks from being stolen by malware infecting your computer.</source>
+        <translation>FairQuark aizvērsies, lai pabeigtu šifrēšanu. Atcerieties, ka maciņa šifrēšana nevar pilnībā novērst bitkoinu zādzību, ko veic datorā ieviesušās kaitīgas programmas.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -374,8 +374,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about BitQuark</source>
-        <translation>Parādīt informāciju par BitQuark</translation>
+        <source>Show information about FairQuark</source>
+        <translation>Parādīt informāciju par FairQuark</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a BitQuark address</source>
-        <translation>Nosūtīt bitkoinus uz BitQuark adresi</translation>
+        <source>Send coins to a FairQuark address</source>
+        <translation>Nosūtīt bitkoinus uz FairQuark adresi</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for BitQuark</source>
-        <translation>Mainīt BitQuark konfigurācijas uzstādījumus</translation>
+        <source>Modify configuration options for FairQuark</source>
+        <translation>Mainīt FairQuark konfigurācijas uzstādījumus</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,7 +455,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>BitQuark</source>
+        <source>FairQuark</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -480,7 +480,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About BitQuark</source>
+        <source>&amp;About FairQuark</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -500,12 +500,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your BitQuark addresses to prove you own them</source>
+        <source>Sign messages with your FairQuark addresses to prove you own them</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified BitQuark addresses</source>
+        <source>Verify messages to ensure they were signed with specified FairQuark addresses</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -536,13 +536,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>BitQuark client</source>
-        <translation>BitQuark klients</translation>
+        <source>FairQuark client</source>
+        <translation>FairQuark klients</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to BitQuark network</source>
-        <translation><numerusform>%n aktīvu savienojumu ar BitQuark tīklu</numerusform><numerusform>%n aktīvs savienojums ar BitQuark tīklu</numerusform><numerusform>%n aktīvu savienojumu as BitQuark tīklu</numerusform></translation>
+        <source>%n active connection(s) to FairQuark network</source>
+        <translation><numerusform>%n aktīvu savienojumu ar FairQuark tīklu</numerusform><numerusform>%n aktīvs savienojums ar FairQuark tīklu</numerusform><numerusform>%n aktīvu savienojumu as FairQuark tīklu</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -656,7 +656,7 @@ Adrese: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid BitQuark address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid FairQuark address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -671,7 +671,7 @@ Adrese: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. BitQuark can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. FairQuark can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -737,8 +737,8 @@ Adrese: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid BitQuark address.</source>
-        <translation>Ierakstītā adrese &quot;%1&quot; nav derīga BitQuark adrese.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid FairQuark address.</source>
+        <translation>Ierakstītā adrese &quot;%1&quot; nav derīga FairQuark adrese.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Adrese: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>BitQuark-Qt</source>
-        <translation>BitQuark-Qt</translation>
+        <source>FairQuark-Qt</source>
+        <translation>FairQuark-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,13 +819,13 @@ Adrese: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start BitQuark after logging in to the system.</source>
-        <translation>Automātiski sākt BitQuark pēc pieteikšanās sistēmā.</translation>
+        <source>Automatically start FairQuark after logging in to the system.</source>
+        <translation>Automātiski sākt FairQuark pēc pieteikšanās sistēmā.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start BitQuark on system login</source>
-        <translation>&amp;Sākt BitQuark reizē ar sistēmu</translation>
+        <source>&amp;Start FairQuark on system login</source>
+        <translation>&amp;Sākt FairQuark reizē ar sistēmu</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -844,8 +844,8 @@ Adrese: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the BitQuark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Uz rūtera automātiski atvērt BitQuark klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
+        <source>Automatically open the FairQuark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Uz rūtera automātiski atvērt FairQuark klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -854,7 +854,7 @@ Adrese: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the BitQuark network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the FairQuark network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -929,8 +929,8 @@ Adrese: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting BitQuark.</source>
-        <translation>Šeit var iestatīt lietotāja valodu. Iestatījums aktivizēsies pēc BitQuark pārstartēšanas.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FairQuark.</source>
+        <translation>Šeit var iestatīt lietotāja valodu. Iestatījums aktivizēsies pēc FairQuark pārstartēšanas.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -944,8 +944,8 @@ Adrese: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show BitQuark addresses in the transaction list or not.</source>
-        <translation>Rādīt vai nē BitQuark adreses transakciju sarakstā.</translation>
+        <source>Whether to show FairQuark addresses in the transaction list or not.</source>
+        <translation>Rādīt vai nē FairQuark adreses transakciju sarakstā.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -996,7 +996,7 @@ Adrese: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting BitQuark.</source>
+        <source>This setting will take effect after restarting FairQuark.</source>
         <translation>Iestatījums aktivizēsies pēc Bitkoin pārstartēšanas.</translation>
     </message>
     <message>
@@ -1015,8 +1015,8 @@ Adrese: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitQuark network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar BitQuark tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FairQuark network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar FairQuark tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1069,7 +1069,7 @@ Adrese: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start BitQuark: click-to-pay handler</source>
+        <source>Cannot start FairQuark: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1219,7 +1219,7 @@ Adrese: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the BitQuark-Qt help message to get a list with possible BitQuark command-line options.</source>
+        <source>Show the FairQuark-Qt help message to get a list with possible FairQuark command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1239,12 +1239,12 @@ Adrese: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>BitQuark - Debug window</source>
+        <source>FairQuark - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>BitQuark Core</source>
+        <source>FairQuark Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1254,7 +1254,7 @@ Adrese: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the BitQuark debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the FairQuark debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1264,8 +1264,8 @@ Adrese: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the BitQuark RPC console.</source>
-        <translation>Laipni lūgti BitQuark RPC konsolē.</translation>
+        <source>Welcome to the FairQuark RPC console.</source>
+        <translation>Laipni lūgti FairQuark RPC konsolē.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1407,7 +1407,7 @@ Adrese: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <source>The address to send the payment to (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1448,8 +1448,8 @@ Adrese: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a BitQuark address (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Ierakstiet BitQuark adresi (piem. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a FairQuark address (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Ierakstiet FairQuark adresi (piem. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
 </context>
 <context>
@@ -1471,7 +1471,7 @@ Adrese: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <source>The address to sign the message with (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1513,7 +1513,7 @@ Adrese: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this BitQuark address</source>
+        <source>Sign the message to prove you own this FairQuark address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1544,12 +1544,12 @@ Adrese: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <source>The address the message was signed with (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified BitQuark address</source>
+        <source>Verify the message to ensure it was signed with the specified FairQuark address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1565,8 +1565,8 @@ Adrese: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a BitQuark address (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Ierakstiet BitQuark adresi (piem. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a FairQuark address (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Ierakstiet FairQuark adresi (piem. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1575,7 +1575,7 @@ Adrese: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter BitQuark signature</source>
+        <source>Enter FairQuark signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1654,7 +1654,7 @@ Adrese: %4
     </message>
 	<message>
         <location line="+1"/>
-        <source>The BitQuark developers</source>
+        <source>The FairQuark developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2189,11 +2189,11 @@ Adrese: %4
     </message>
 </context>
 <context>
-    <name>BitQuark-core</name>
+    <name>FairQuark-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>BitQuark version</source>
-        <translation>BitQuark versija</translation>
+        <source>FairQuark version</source>
+        <translation>FairQuark versija</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2202,8 +2202,8 @@ Adrese: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or BitQuarkd</source>
-        <translation>Nosūtīt komantu uz -server vai BitQuarkd</translation>
+        <source>Send command to -server or FairQuarkd</source>
+        <translation>Nosūtīt komantu uz -server vai FairQuarkd</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2222,13 +2222,13 @@ Adrese: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: BitQuark.conf)</source>
-        <translation>Norādiet konfigurācijas failu (pēc noklusēšanas: BitQuark.conf)</translation>
+        <source>Specify configuration file (default: FairQuark.conf)</source>
+        <translation>Norādiet konfigurācijas failu (pēc noklusēšanas: FairQuark.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: BitQuarkd.pid)</source>
-        <translation>Norādiet pid failu (pēc noklusēšanas: BitQuarkd.pid)</translation>
+        <source>Specify pid file (default: FairQuarkd.pid)</source>
+        <translation>Norādiet pid failu (pēc noklusēšanas: FairQuarkd.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2305,13 +2305,13 @@ Adrese: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=BitQuarkrpc
+rpcuser=FairQuarkrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;FairQuark Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2327,7 +2327,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. BitQuark is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. FairQuark is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2372,7 +2372,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BitQuark will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FairQuark will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2622,7 +2622,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the BitQuark Wiki for SSL setup instructions)</source>
+        <source>SSL options: (see the FairQuark Wiki for SSL setup instructions)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2812,13 +2812,13 @@ for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of BitQuark</source>
-        <translation>Nevar ielādēt wallet.dat: maciņa atvēršanai nepieciešama jaunāka BitQuark versija</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FairQuark</source>
+        <translation>Nevar ielādēt wallet.dat: maciņa atvēršanai nepieciešama jaunāka FairQuark versija</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart BitQuark to complete</source>
-        <translation>Bija nepieciešams pārstartēt maciņu: pabeigšanai pārstartējiet BitQuark</translation>
+        <source>Wallet needed to be rewritten: restart FairQuark to complete</source>
+        <translation>Bija nepieciešams pārstartēt maciņu: pabeigšanai pārstartējiet FairQuark</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2877,8 +2877,8 @@ for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. BitQuark is probably already running.</source>
-        <translation>Nevar pievienoties %s uz šī datora. BitQuark droši vien jau darbojas.</translation>
+        <source>Unable to bind to %s on this computer. FairQuark is probably already running.</source>
+        <translation>Nevar pievienoties %s uz šī datora. FairQuark droši vien jau darbojas.</translation>
     </message>
     <message>
         <location line="+64"/>

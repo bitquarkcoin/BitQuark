@@ -151,7 +151,7 @@ int main(int argc, char *argv[])
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
     QApplication::setOrganizationName("BitQuark");
-    QApplication::setOrganizationDomain("bitquark.com");
+    QApplication::setOrganizationDomain("bitquark.info");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
         QApplication::setApplicationName("BitQuark-Qt-testnet");
     else

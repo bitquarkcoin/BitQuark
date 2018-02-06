@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About BitQuark</source>
-        <translation>Tietoa BitQuarkista</translation>
+        <source>About FairQuark</source>
+        <translation>Tietoa FairQuarkista</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;BitQuark&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;BitQuark&lt;/b&gt; versio</translation>
+        <source>&lt;b&gt;FairQuark&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;FairQuark&lt;/b&gt; versio</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -40,7 +40,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
 	<message>
         <location line="+0"/>
-        <source>The BitQuark developers</source>
+        <source>The FairQuark developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -73,8 +73,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your BitQuark addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Nämä ovat BitQuark-osoitteesi joihin voit vastaanottaa maksuja. Voit haluta antaa jokaiselle maksajalle omansa, että pystyt seuraamaan keneltä maksut tulevat.</translation>
+        <source>These are your FairQuark addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Nämä ovat FairQuark-osoitteesi joihin voit vastaanottaa maksuja. Voit haluta antaa jokaiselle maksajalle omansa, että pystyt seuraamaan keneltä maksut tulevat.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -88,8 +88,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a BitQuark address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat BitQuark-osoitteen</translation>
+        <source>Sign a message to prove you own a FairQuark address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat FairQuark-osoitteen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -113,8 +113,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified BitQuark address</source>
-        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä BitQuark-osoitteella</translation>
+        <source>Verify a message to ensure it was signed with a specified FairQuark address</source>
+        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä FairQuark-osoitteella</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -128,7 +128,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your BitQuark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your FairQuark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -254,8 +254,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BitQuarkS&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja menetät tunnuslauseesi, &lt;b&gt;MENETÄT KAIKKI BitQuarkISI&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FairQuarkS&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja menetät tunnuslauseesi, &lt;b&gt;MENETÄT KAIKKI FairQuarkISI&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -281,8 +281,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="-56"/>
-        <source>BitQuark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BitQuarks from being stolen by malware infecting your computer.</source>
-        <translation>BitQuark sulkeutuu lopettaakseen salausprosessin. Muista, että salattukaan lompakko ei täysin suojaa sitä haittaohjelmien aiheuttamilta varkauksilta.</translation>
+        <source>FairQuark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FairQuarks from being stolen by malware infecting your computer.</source>
+        <translation>FairQuark sulkeutuu lopettaakseen salausprosessin. Muista, että salattukaan lompakko ei täysin suojaa sitä haittaohjelmien aiheuttamilta varkauksilta.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -366,7 +366,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="-14"/>
         <source>Show the list of addresses for receiving payments</source>
-        <translation>Näytä BitQuarkien vastaanottamiseen käytetyt osoitteet</translation>
+        <translation>Näytä FairQuarkien vastaanottamiseen käytetyt osoitteet</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -380,8 +380,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about BitQuark</source>
-        <translation>Näytä tietoa BitQuark-projektista</translation>
+        <source>Show information about FairQuark</source>
+        <translation>Näytä tietoa FairQuark-projektista</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -425,13 +425,13 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a BitQuark address</source>
-        <translation>Lähetä kolikoita BitQuark-osoitteeseen</translation>
+        <source>Send coins to a FairQuark address</source>
+        <translation>Lähetä kolikoita FairQuark-osoitteeseen</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for BitQuark</source>
-        <translation>Muuta BitQuarkin konfiguraatioasetuksia</translation>
+        <source>Modify configuration options for FairQuark</source>
+        <translation>Muuta FairQuarkin konfiguraatioasetuksia</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -461,8 +461,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>BitQuark</source>
-        <translation>BitQuark</translation>
+        <source>FairQuark</source>
+        <translation>FairQuark</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -486,8 +486,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About BitQuark</source>
-        <translation>&amp;Tietoa BitQuarkista</translation>
+        <source>&amp;About FairQuark</source>
+        <translation>&amp;Tietoa FairQuarkista</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -497,7 +497,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+1"/>
         <source>Show or hide the main Window</source>
-        <translation>Näytä tai piilota BitQuark-ikkuna</translation>
+        <translation>Näytä tai piilota FairQuark-ikkuna</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -506,13 +506,13 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your BitQuark addresses to prove you own them</source>
-        <translation>Allekirjoita viestisi omalla BitQuark -osoitteellasi todistaaksesi, että omistat ne</translation>
+        <source>Sign messages with your FairQuark addresses to prove you own them</source>
+        <translation>Allekirjoita viestisi omalla FairQuark -osoitteellasi todistaaksesi, että omistat ne</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified BitQuark addresses</source>
-        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä BitQuark -osoitteella</translation>
+        <source>Verify messages to ensure they were signed with specified FairQuark addresses</source>
+        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä FairQuark -osoitteella</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -542,13 +542,13 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+47"/>
-        <source>BitQuark client</source>
-        <translation>BitQuark-asiakas</translation>
+        <source>FairQuark client</source>
+        <translation>FairQuark-asiakas</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to BitQuark network</source>
-        <translation><numerusform>%n aktiivinen yhteys BitQuark-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä BitQuark-verkkoon</numerusform></translation>
+        <source>%n active connection(s) to FairQuark network</source>
+        <translation><numerusform>%n aktiivinen yhteys FairQuark-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä FairQuark-verkkoon</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -661,8 +661,8 @@ Osoite: %4</translation>
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid BitQuark address or malformed URI parameters.</source>
-        <translation>URIa ei voitu jäsentää! Tämä voi johtua kelvottomasta BitQuark-osoitteesta tai virheellisistä URI parametreista.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid FairQuark address or malformed URI parameters.</source>
+        <translation>URIa ei voitu jäsentää! Tämä voi johtua kelvottomasta FairQuark-osoitteesta tai virheellisistä URI parametreista.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -676,8 +676,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. BitQuark can no longer continue safely and will quit.</source>
-        <translation>Peruuttamaton virhe on tapahtunut. BitQuark ei voi enää jatkaa turvallisesti ja sammutetaan.</translation>
+        <source>A fatal error occurred. FairQuark can no longer continue safely and will quit.</source>
+        <translation>Peruuttamaton virhe on tapahtunut. FairQuark ei voi enää jatkaa turvallisesti ja sammutetaan.</translation>
     </message>
 </context>
 <context>
@@ -742,8 +742,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid BitQuark address.</source>
-        <translation>Antamasi osoite &quot;%1&quot; ei ole validi BitQuark-osoite.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid FairQuark address.</source>
+        <translation>Antamasi osoite &quot;%1&quot; ei ole validi FairQuark-osoite.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -761,8 +761,8 @@ Osoite: %4</translation>
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>BitQuark-Qt</source>
-        <translation>BitQuark-Qt</translation>
+        <source>FairQuark-Qt</source>
+        <translation>FairQuark-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -824,13 +824,13 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start BitQuark after logging in to the system.</source>
-        <translation>Käynnistä BitQuark kirjautumisen yhteydessä.</translation>
+        <source>Automatically start FairQuark after logging in to the system.</source>
+        <translation>Käynnistä FairQuark kirjautumisen yhteydessä.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start BitQuark on system login</source>
-        <translation>&amp;Käynnistä BitQuark kirjautumisen yhteydessä</translation>
+        <source>&amp;Start FairQuark on system login</source>
+        <translation>&amp;Käynnistä FairQuark kirjautumisen yhteydessä</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -849,8 +849,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the BitQuark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa BitQuark-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
+        <source>Automatically open the FairQuark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa FairQuark-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -859,8 +859,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the BitQuark network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Ota yhteys BitQuark-verkkoon SOCKS-proxyn läpi (esimerkiksi kun haluat käyttää Tor-verkkoa).</translation>
+        <source>Connect to the FairQuark network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Ota yhteys FairQuark-verkkoon SOCKS-proxyn läpi (esimerkiksi kun haluat käyttää Tor-verkkoa).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -915,7 +915,7 @@ Osoite: %4</translation>
     <message>
         <location line="+7"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Ikkunaa suljettaessa vain pienentää BitQuark-ohjelman ikkunan lopettamatta itse ohjelmaa. Kun tämä asetus on valittuna, ohjelman voi sulkea vain valitsemalla Lopeta ohjelman valikosta.</translation>
+        <translation>Ikkunaa suljettaessa vain pienentää FairQuark-ohjelman ikkunan lopettamatta itse ohjelmaa. Kun tämä asetus on valittuna, ohjelman voi sulkea vain valitsemalla Lopeta ohjelman valikosta.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -934,23 +934,23 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting BitQuark.</source>
-        <translation>Tässä voit määritellä käyttöliittymän kielen. Muutokset astuvat voimaan seuraavan kerran, kun BitQuark käynnistetään.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FairQuark.</source>
+        <translation>Tässä voit määritellä käyttöliittymän kielen. Muutokset astuvat voimaan seuraavan kerran, kun FairQuark käynnistetään.</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Yksikkö jona BitQuark-määrät näytetään</translation>
+        <translation>Yksikkö jona FairQuark-määrät näytetään</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Valitse mitä yksikköä käytetään ensisijaisesti BitQuark-määrien näyttämiseen.</translation>
+        <translation>Valitse mitä yksikköä käytetään ensisijaisesti FairQuark-määrien näyttämiseen.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show BitQuark addresses in the transaction list or not.</source>
-        <translation>Näytetäänkö BitQuark-osoitteet rahansiirrot listassa vai ei.</translation>
+        <source>Whether to show FairQuark addresses in the transaction list or not.</source>
+        <translation>Näytetäänkö FairQuark-osoitteet rahansiirrot listassa vai ei.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1001,8 +1001,8 @@ Osoite: %4</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting BitQuark.</source>
-        <translation>Tämä asetus astuu voimaan seuraavalla kerralla, kun BitQuark käynnistetään.</translation>
+        <source>This setting will take effect after restarting FairQuark.</source>
+        <translation>Tämä asetus astuu voimaan seuraavalla kerralla, kun FairQuark käynnistetään.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1020,8 +1020,8 @@ Osoite: %4</translation>
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitQuark network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu BitQuark-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FairQuark network after a connection is established, but this process has not completed yet.</source>
+        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu FairQuark-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1056,12 +1056,12 @@ Osoite: %4</translation>
     <message>
         <location line="-101"/>
         <source>Your current balance</source>
-        <translation>Tililläsi tällä hetkellä olevien BitQuarkien määrä</translation>
+        <translation>Tililläsi tällä hetkellä olevien FairQuarkien määrä</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
-        <translation>Niiden saapuvien rahansiirtojen määrä, joita BitQuark-verkko ei vielä ole ehtinyt vahvistaa ja siten eivät vielä näy saldossa.</translation>
+        <translation>Niiden saapuvien rahansiirtojen määrä, joita FairQuark-verkko ei vielä ole ehtinyt vahvistaa ja siten eivät vielä näy saldossa.</translation>
     </message>
     <message>
         <location filename="../overviewpage.cpp" line="+116"/>
@@ -1074,7 +1074,7 @@ Osoite: %4</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start BitQuark: click-to-pay handler</source>
+        <source>Cannot start FairQuark: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1224,8 +1224,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the BitQuark-Qt help message to get a list with possible BitQuark command-line options.</source>
-        <translation>Näytä BitQuark-Qt komentoriviparametrien ohjesivu, jossa on listattuna mahdolliset komentoriviparametrit.</translation>
+        <source>Show the FairQuark-Qt help message to get a list with possible FairQuark command-line options.</source>
+        <translation>Näytä FairQuark-Qt komentoriviparametrien ohjesivu, jossa on listattuna mahdolliset komentoriviparametrit.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1244,13 +1244,13 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>BitQuark - Debug window</source>
-        <translation>BitQuark - Debug ikkuna</translation>
+        <source>FairQuark - Debug window</source>
+        <translation>FairQuark - Debug ikkuna</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>BitQuark Core</source>
-        <translation>BitQuark-ydin</translation>
+        <source>FairQuark Core</source>
+        <translation>FairQuark-ydin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1259,7 +1259,7 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the BitQuark debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the FairQuark debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Avaa lokitiedosto nykyisestä data-kansiosta. Tämä voi viedä useamman sekunnin, jos lokitiedosto on iso.</translation>
     </message>
     <message>
@@ -1269,8 +1269,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the BitQuark RPC console.</source>
-        <translation>Tervetuloa BitQuark RPC konsoliin.</translation>
+        <source>Welcome to the FairQuark RPC console.</source>
+        <translation>Tervetuloa FairQuark RPC konsoliin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1295,7 +1295,7 @@ Osoite: %4</translation>
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Lähetä BitQuarkeja</translation>
+        <translation>Lähetä FairQuarkeja</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1345,7 +1345,7 @@ Osoite: %4</translation>
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Hyväksy BitQuarkien lähettäminen</translation>
+        <translation>Hyväksy FairQuarkien lähettäminen</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1365,7 +1365,7 @@ Osoite: %4</translation>
     <message>
         <location line="+5"/>
         <source>The amount to pay must be larger than 0.</source>
-        <translation>Maksettavan summan tulee olla suurempi kuin 0 BitQuarkia.</translation>
+        <translation>Maksettavan summan tulee olla suurempi kuin 0 FairQuarkia.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1390,7 +1390,7 @@ Osoite: %4</translation>
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Virhe: Rahansiirto hylättiin.  Tämä voi tapahtua jos jotkin BitQuarkeistasi on jo käytetty, esimerkiksi jos olet käyttänyt kopiota wallet.dat-lompakkotiedostosta ja BitQuarkit on merkitty käytetyksi vain kopiossa.</translation>
+        <translation>Virhe: Rahansiirto hylättiin.  Tämä voi tapahtua jos jotkin FairQuarkeistasi on jo käytetty, esimerkiksi jos olet käyttänyt kopiota wallet.dat-lompakkotiedostosta ja FairQuarkit on merkitty käytetyksi vain kopiossa.</translation>
     </message>
 </context>
 <context>
@@ -1412,7 +1412,7 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <source>The address to send the payment to (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1453,8 +1453,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a BitQuark address (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Anna BitQuark-osoite (esim. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a FairQuark address (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Anna FairQuark-osoite (esim. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
 </context>
 <context>
@@ -1476,8 +1476,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Osoite, jolla viesti allekirjoitetaan (esimerkiksi 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>The address to sign the message with (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Osoite, jolla viesti allekirjoitetaan (esimerkiksi qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1518,8 +1518,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this BitQuark address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän BitQuark-osoitteen</translation>
+        <source>Sign the message to prove you own this FairQuark address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän FairQuark-osoitteen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1549,13 +1549,13 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Osoite, jolla viesti allekirjoitettiin (esimerkiksi 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>The address the message was signed with (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Osoite, jolla viesti allekirjoitettiin (esimerkiksi qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified BitQuark address</source>
-        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä BitQuark-osoitteella</translation>
+        <source>Verify the message to ensure it was signed with the specified FairQuark address</source>
+        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä FairQuark-osoitteella</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1570,8 +1570,8 @@ Osoite: %4</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a BitQuark address (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Anna BitQuark-osoite (esim. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a FairQuark address (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Anna FairQuark-osoite (esim. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1580,8 +1580,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter BitQuark signature</source>
-        <translation>Syötä BitQuark-allekirjoitus</translation>
+        <source>Enter FairQuark signature</source>
+        <translation>Syötä FairQuark-allekirjoitus</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1659,7 +1659,7 @@ Osoite: %4</translation>
     </message>
 	<message>
         <location line="+1"/>
-        <source>The BitQuark developers</source>
+        <source>The FairQuark developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1965,7 +1965,7 @@ Osoite: %4</translation>
     <message>
         <location line="+2"/>
         <source>Destination address of transaction.</source>
-        <translation>Rahansiirron kohteen BitQuark-osoite</translation>
+        <translation>Rahansiirron kohteen FairQuark-osoite</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2147,7 +2147,7 @@ Osoite: %4</translation>
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation>Lähetä BitQuarkeja</translation>
+        <translation>Lähetä FairQuarkeja</translation>
     </message>
 </context>
 <context>
@@ -2194,11 +2194,11 @@ Osoite: %4</translation>
     </message>
 </context>
 <context>
-    <name>BitQuark-core</name>
+    <name>FairQuark-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>BitQuark version</source>
-        <translation>BitQuarkin versio</translation>
+        <source>FairQuark version</source>
+        <translation>FairQuarkin versio</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2207,8 +2207,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or BitQuarkd</source>
-        <translation>Lähetä käsky palvelimelle tai BitQuarkd:lle</translation>
+        <source>Send command to -server or FairQuarkd</source>
+        <translation>Lähetä käsky palvelimelle tai FairQuarkd:lle</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2227,13 +2227,13 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: BitQuark.conf)</source>
-        <translation>Määritä asetustiedosto (oletus: BitQuark.conf)</translation>
+        <source>Specify configuration file (default: FairQuark.conf)</source>
+        <translation>Määritä asetustiedosto (oletus: FairQuark.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: BitQuarkd.pid)</source>
-        <translation>Määritä pid-tiedosto (oletus: BitQuark.pid)</translation>
+        <source>Specify pid file (default: FairQuarkd.pid)</source>
+        <translation>Määritä pid-tiedosto (oletus: FairQuark.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2310,13 +2310,13 @@ Osoite: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=BitQuarkrpc
+rpcuser=FairQuarkrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;FairQuark Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2332,7 +2332,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. BitQuark is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. FairQuark is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2377,8 +2377,8 @@ for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BitQuark will not work properly.</source>
-        <translation>Varoitus: Tarkista että tietokoneesi kellonaika ja päivämäärä ovat paikkansapitäviä! BitQuark ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FairQuark will not work properly.</source>
+        <translation>Varoitus: Tarkista että tietokoneesi kellonaika ja päivämäärä ovat paikkansapitäviä! FairQuark ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2627,8 +2627,8 @@ for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the BitQuark Wiki for SSL setup instructions)</source>
-        <translation>SSL asetukset (katso BitQuark Wikistä tarkemmat SSL ohjeet)</translation>
+        <source>SSL options: (see the FairQuark Wiki for SSL setup instructions)</source>
+        <translation>SSL asetukset (katso FairQuark Wikistä tarkemmat SSL ohjeet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2818,13 +2818,13 @@ TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of BitQuark</source>
-        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Tarvitset uudemman version BitQuarkista</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FairQuark</source>
+        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Tarvitset uudemman version FairQuarkista</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart BitQuark to complete</source>
-        <translation>Lompakko tarvitsee uudelleenkirjoittaa: käynnistä BitQuark uudelleen</translation>
+        <source>Wallet needed to be rewritten: restart FairQuark to complete</source>
+        <translation>Lompakko tarvitsee uudelleenkirjoittaa: käynnistä FairQuark uudelleen</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2883,8 +2883,8 @@ TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. BitQuark is probably already running.</source>
-        <translation>Kytkeytyminen %s ei onnistu tällä tietokoneella. BitQuark on todennäköisesti jo ajamassa.</translation>
+        <source>Unable to bind to %s on this computer. FairQuark is probably already running.</source>
+        <translation>Kytkeytyminen %s ei onnistu tällä tietokoneella. FairQuark on todennäköisesti jo ajamassa.</translation>
     </message>
     <message>
         <location line="+64"/>

@@ -4,12 +4,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About BitQuark</source>
+        <source>About FairQuark</source>
         <translation>關於位元幣</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;BitQuark&lt;/b&gt; version</source>
+        <source>&lt;b&gt;FairQuark&lt;/b&gt; version</source>
         <translation>&lt;b&gt;位元幣&lt;/b&gt;版本</translation>
     </message>
     <message>
@@ -39,8 +39,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 	<message>
         <location line="+0"/>
-        <source>The BitQuark developers</source>
-        <translation>The BitQuark developers</translation>
+        <source>The FairQuark developers</source>
+        <translation>The FairQuark developers</translation>
     </message>
 </context>
 <context>
@@ -72,7 +72,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your BitQuark addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your FairQuark addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>這些是你用來收款的位元幣位址. 你可以提供不同的位址給不同的付款人, 來追蹤是誰支付給你.</translation>
     </message>
     <message>
@@ -87,7 +87,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a BitQuark address</source>
+        <source>Sign a message to prove you own a FairQuark address</source>
         <translation>簽署訊息是用來證明位元幣位址是你的</translation>
     </message>
     <message>
@@ -112,7 +112,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified BitQuark address</source>
+        <source>Verify a message to ensure it was signed with a specified FairQuark address</source>
         <translation>驗證訊息是用來確認訊息是用指定的位元幣位址簽署的</translation>
     </message>
     <message>
@@ -127,7 +127,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your BitQuark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your FairQuark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>這是你用來付款的位元幣位址. 在付錢之前, 務必要檢查金額和收款位址是否正確.</translation>
     </message>
     <message>
@@ -253,7 +253,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BitQuarkS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FairQuarkS&lt;/b&gt;!</source>
         <translation>警告: 如果將錢包加密後忘記密碼, 你會&lt;b&gt;失去其中所有的位元幣&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -280,7 +280,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>BitQuark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BitQuarks from being stolen by malware infecting your computer.</source>
+        <source>FairQuark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FairQuarks from being stolen by malware infecting your computer.</source>
         <translation>位元幣現在要關閉以完成加密程序. 請記住, 加密錢包無法完全防止入侵電腦的惡意程式偷取你的位元幣.</translation>
     </message>
     <message>
@@ -379,7 +379,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about BitQuark</source>
+        <source>Show information about FairQuark</source>
         <translation>顯示位元幣相關資訊</translation>
     </message>
     <message>
@@ -424,12 +424,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a BitQuark address</source>
+        <source>Send coins to a FairQuark address</source>
         <translation>付錢到位元幣位址</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for BitQuark</source>
+        <source>Modify configuration options for FairQuark</source>
         <translation>修改位元幣的設定選項</translation>
     </message>
     <message>
@@ -460,7 +460,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>BitQuark</source>
+        <source>FairQuark</source>
         <translation>位元幣</translation>
     </message>
     <message>
@@ -485,7 +485,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About BitQuark</source>
+        <source>&amp;About FairQuark</source>
         <translation>關於位元幣</translation>
     </message>
     <message>
@@ -505,12 +505,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your BitQuark addresses to prove you own them</source>
+        <source>Sign messages with your FairQuark addresses to prove you own them</source>
         <translation>用位元幣位址簽署訊息來證明那是你的</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified BitQuark addresses</source>
+        <source>Verify messages to ensure they were signed with specified FairQuark addresses</source>
         <translation>驗證訊息來確認是用指定的位元幣位址簽署的</translation>
     </message>
     <message>
@@ -541,12 +541,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>BitQuark client</source>
+        <source>FairQuark client</source>
         <translation>位元幣客戶端軟體</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to BitQuark network</source>
+        <source>%n active connection(s) to FairQuark network</source>
         <translation><numerusform>與位元幣網路有 %n 個連線在使用中</numerusform></translation>
     </message>
     <message>
@@ -660,7 +660,7 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid BitQuark address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid FairQuark address or malformed URI parameters.</source>
         <translation>無法解析 URI! 也許位元幣位址無效或 URI 參數有誤.</translation>
     </message>
     <message>
@@ -675,7 +675,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. BitQuark can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. FairQuark can no longer continue safely and will quit.</source>
         <translation>發生了致命的錯誤. 位元幣程式無法再繼續安全執行, 只好結束.</translation>
     </message>
 </context>
@@ -741,7 +741,7 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid BitQuark address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid FairQuark address.</source>
         <translation>輸入的位址 &quot;%1&quot; 並不是有效的位元幣位址.</translation>
     </message>
     <message>
@@ -760,7 +760,7 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>BitQuark-Qt</source>
+        <source>FairQuark-Qt</source>
         <translation>位元幣-Qt</translation>
     </message>
     <message>
@@ -824,12 +824,12 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start BitQuark after logging in to the system.</source>
+        <source>Automatically start FairQuark after logging in to the system.</source>
         <translation>在登入系統後自動啓動位元幣.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start BitQuark on system login</source>
+        <source>&amp;Start FairQuark on system login</source>
         <translation>系統登入時啟動位元幣</translation>
     </message>
     <message>
@@ -849,8 +849,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the BitQuark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自動在路由器上開啟 BitQuark 的客戶端通訊埠. 只有在你的路由器支援 UPnP 且開啟時才有作用.</translation>
+        <source>Automatically open the FairQuark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自動在路由器上開啟 FairQuark 的客戶端通訊埠. 只有在你的路由器支援 UPnP 且開啟時才有作用.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -859,7 +859,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the BitQuark network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the FairQuark network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>透過 SOCKS 代理伺服器連線至位元幣網路 (比如說要透過 Tor 連線).</translation>
     </message>
     <message>
@@ -934,7 +934,7 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting BitQuark.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting FairQuark.</source>
         <translation>可以在這裡設定使用者介面的語言. 這個設定在位元幣程式重啓後才會生效.</translation>
     </message>
     <message>
@@ -949,7 +949,7 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show BitQuark addresses in the transaction list or not.</source>
+        <source>Whether to show FairQuark addresses in the transaction list or not.</source>
         <translation>是否要在交易列表中顯示位元幣位址.</translation>
     </message>
     <message>
@@ -1001,7 +1001,7 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting BitQuark.</source>
+        <source>This setting will take effect after restarting FairQuark.</source>
         <translation>這個設定會在位元幣程式重啓後生效.</translation>
     </message>
     <message>
@@ -1020,7 +1020,7 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitQuark network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FairQuark network after a connection is established, but this process has not completed yet.</source>
         <translation>顯示的資訊可能是過期的. 與位元幣網路的連線建立後, 你的錢包會自動和網路同步, 但這個步驟還沒完成.</translation>
     </message>
     <message>
@@ -1074,8 +1074,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start BitQuark: click-to-pay handler</source>
-        <translation>無法啟動 BitQuark 隨按隨付處理器</translation>
+        <source>Cannot start FairQuark: click-to-pay handler</source>
+        <translation>無法啟動 FairQuark 隨按隨付處理器</translation>
     </message>
 </context>
 <context>
@@ -1224,7 +1224,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the BitQuark-Qt help message to get a list with possible BitQuark command-line options.</source>
+        <source>Show the FairQuark-Qt help message to get a list with possible FairQuark command-line options.</source>
         <translation>顯示位元幣-Qt的求助訊息, 來取得可用的命令列選項列表.</translation>
     </message>
     <message>
@@ -1244,12 +1244,12 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>BitQuark - Debug window</source>
+        <source>FairQuark - Debug window</source>
         <translation>位元幣 - 除錯視窗</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>BitQuark Core</source>
+        <source>FairQuark Core</source>
         <translation>位元幣核心</translation>
     </message>
     <message>
@@ -1259,7 +1259,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the BitQuark debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the FairQuark debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>從目前的資料目錄下開啓位元幣的除錯紀錄檔. 當紀錄檔很大時可能要花好幾秒的時間.</translation>
     </message>
     <message>
@@ -1269,7 +1269,7 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the BitQuark RPC console.</source>
+        <source>Welcome to the FairQuark RPC console.</source>
         <translation>歡迎使用位元幣 RPC 主控台.</translation>
     </message>
     <message>
@@ -1412,8 +1412,8 @@ Address: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>付款的目標位址 (比如說 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>The address to send the payment to (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>付款的目標位址 (比如說 qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1453,8 +1453,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a BitQuark address (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>輸入位元幣位址 (比如說 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a FairQuark address (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>輸入位元幣位址 (比如說 qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
 </context>
 <context>
@@ -1476,8 +1476,8 @@ Address: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>用來簽署訊息的位址 (比如說 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>The address to sign the message with (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>用來簽署訊息的位址 (比如說 qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1518,7 +1518,7 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this BitQuark address</source>
+        <source>Sign the message to prove you own this FairQuark address</source>
         <translation>簽署訊息是用來證明這個位元幣位址是你的</translation>
     </message>
     <message>
@@ -1549,12 +1549,12 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>簽署該訊息的位址 (比如說 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>The address the message was signed with (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>簽署該訊息的位址 (比如說 qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified BitQuark address</source>
+        <source>Verify the message to ensure it was signed with the specified FairQuark address</source>
         <translation>驗證訊息是用來確認訊息是用指定的位元幣位址簽署的</translation>
     </message>
     <message>
@@ -1570,8 +1570,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a BitQuark address (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>輸入位元幣位址 (比如說 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a FairQuark address (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>輸入位元幣位址 (比如說 qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1580,7 +1580,7 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter BitQuark signature</source>
+        <source>Enter FairQuark signature</source>
         <translation>輸入位元幣簽章</translation>
     </message>
     <message>
@@ -1659,7 +1659,7 @@ Address: %4
     </message>
 	<message>
         <location line="+1"/>
-        <source>The BitQuark developers</source>
+        <source>The FairQuark developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2194,10 +2194,10 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>BitQuark-core</name>
+    <name>FairQuark-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>BitQuark version</source>
+        <source>FairQuark version</source>
         <translation>位元幣版本</translation>
     </message>
     <message>
@@ -2207,8 +2207,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or BitQuarkd</source>
-        <translation>送指令給 -server 或 BitQuarkd
+        <source>Send command to -server or FairQuarkd</source>
+        <translation>送指令給 -server 或 FairQuarkd
 </translation>
     </message>
     <message>
@@ -2231,14 +2231,14 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: BitQuark.conf)</source>
-        <translation>指定設定檔 (預設: BitQuark.conf)
+        <source>Specify configuration file (default: FairQuark.conf)</source>
+        <translation>指定設定檔 (預設: FairQuark.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: BitQuarkd.pid)</source>
-        <translation>指定行程識別碼檔案 (預設: BitQuarkd.pid)
+        <source>Specify pid file (default: FairQuarkd.pid)</source>
+        <translation>指定行程識別碼檔案 (預設: FairQuarkd.pid)
 </translation>
     </message>
     <message>
@@ -2319,25 +2319,25 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=BitQuarkrpc
+rpcuser=FairQuarkrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;FairQuark Alert&quot; admin@foo.com
 </source>
         <translation>%s, 你必須要在以下設定檔中設定 RPC 密碼(rpcpassword):
 %s
 建議你使用以下隨機產生的密碼:
-rpcuser=BitQuarkrpc
+rpcuser=FairQuarkrpc
 rpcpassword=%s
 (你不用記住這個密碼)
 使用者名稱(rpcuser)和密碼(rpcpassword)不可以相同!
 如果設定檔還不存在, 請在新增時, 設定檔案權限為&quot;只有主人才能讀取&quot;.
 也建議你設定警示通知, 發生問題時你才會被通知到;
 比如說設定為:
-alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
+alertnotify=echo %%s | mail -s &quot;FairQuark Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2352,7 +2352,7 @@ alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. BitQuark is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. FairQuark is probably already running.</source>
         <translation>無法鎖定資料目錄 %s. 也許位元幣已經在執行了.</translation>
     </message>
     <message>
@@ -2397,7 +2397,7 @@ alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BitQuark will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FairQuark will not work properly.</source>
         <translation>警告: 請檢查電腦時間與日期是否正確! 位元幣無法在時鐘不準的情況下正常運作.</translation>
     </message>
     <message>
@@ -2647,8 +2647,8 @@ alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the BitQuark Wiki for SSL setup instructions)</source>
-        <translation>SSL 選項: (SSL 設定程序請見 BitQuark Wiki)</translation>
+        <source>SSL options: (see the FairQuark Wiki for SSL setup instructions)</source>
+        <translation>SSL 選項: (SSL 設定程序請見 FairQuark Wiki)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2844,12 +2844,12 @@ alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of BitQuark</source>
-        <translation>載入檔案 wallet.dat 失敗: 此錢包需要新版的 BitQuark</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FairQuark</source>
+        <translation>載入檔案 wallet.dat 失敗: 此錢包需要新版的 FairQuark</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart BitQuark to complete</source>
+        <source>Wallet needed to be rewritten: restart FairQuark to complete</source>
         <translation>錢包需要重寫: 請重啟位元幣來完成</translation>
     </message>
     <message>
@@ -2909,7 +2909,7 @@ alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. BitQuark is probably already running.</source>
+        <source>Unable to bind to %s on this computer. FairQuark is probably already running.</source>
         <translation>無法和這台電腦上的 %s 繫結. 也許位元幣已經在執行了.</translation>
     </message>
     <message>

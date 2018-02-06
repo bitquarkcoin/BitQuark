@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About BitQuark</source>
-        <translation>Om BitQuark</translation>
+        <source>About FairQuark</source>
+        <translation>Om FairQuark</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;BitQuark&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;BitQuark&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;FairQuark&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;FairQuark&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -39,8 +39,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
 	<message>
         <location line="+0"/>
-        <source>The BitQuark developers</source>
-        <translation>BitQuark-udviklerne</translation>
+        <source>The FairQuark developers</source>
+        <translation>FairQuark-udviklerne</translation>
     </message>
 </context>
 <context>
@@ -72,8 +72,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your BitQuark addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dette er dine BitQuark-adresser til at modtage betalinger med. Du kan give en forskellig adresse til hver afsender, så du kan holde styr på, hvem der betaler dig.</translation>
+        <source>These are your FairQuark addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dette er dine FairQuark-adresser til at modtage betalinger med. Du kan give en forskellig adresse til hver afsender, så du kan holde styr på, hvem der betaler dig.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -87,8 +87,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a BitQuark address</source>
-        <translation>Underskriv en besked for at bevise, at en BitQuark-adresse tilhører dig</translation>
+        <source>Sign a message to prove you own a FairQuark address</source>
+        <translation>Underskriv en besked for at bevise, at en FairQuark-adresse tilhører dig</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -112,8 +112,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified BitQuark address</source>
-        <translation>Efterprøv en besked for at sikre, at den er underskrevet med den angivne BitQuark-adresse</translation>
+        <source>Verify a message to ensure it was signed with a specified FairQuark address</source>
+        <translation>Efterprøv en besked for at sikre, at den er underskrevet med den angivne FairQuark-adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -127,8 +127,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your BitQuark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Disse er dine BitQuark-adresser for at sende betalinger. Tjek altid beløb og modtageradresse, inden du sender BitQuarks.</translation>
+        <source>These are your FairQuark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Disse er dine FairQuark-adresser for at sende betalinger. Tjek altid beløb og modtageradresse, inden du sender FairQuarks.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -143,7 +143,7 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     <message>
         <location line="+1"/>
         <source>Send &amp;Coins</source>
-        <translation>Send BitQuarks</translation>
+        <translation>Send FairQuarks</translation>
     </message>
     <message>
         <location line="+260"/>
@@ -253,8 +253,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BitQuarkS&lt;/b&gt;!</source>
-        <translation>Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE BitQuarkS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FairQuarkS&lt;/b&gt;!</source>
+        <translation>Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE FairQuarkS&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -280,8 +280,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="-56"/>
-        <source>BitQuark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BitQuarks from being stolen by malware infecting your computer.</source>
-        <translation>BitQuark vil nu lukke for at gennemføre krypteringsprocessen. Husk på, at kryptering af din tegnebog vil ikke beskytte dine BitQuarks fuldt ud mod at blive stjålet af malware på din computer.</translation>
+        <source>FairQuark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FairQuarks from being stolen by malware infecting your computer.</source>
+        <translation>FairQuark vil nu lukke for at gennemføre krypteringsprocessen. Husk på, at kryptering af din tegnebog vil ikke beskytte dine FairQuarks fuldt ud mod at blive stjålet af malware på din computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -379,8 +379,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about BitQuark</source>
-        <translation>Vis informationer om BitQuark</translation>
+        <source>Show information about FairQuark</source>
+        <translation>Vis informationer om FairQuark</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -424,13 +424,13 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a BitQuark address</source>
-        <translation>Send BitQuarks til en BitQuark-adresse</translation>
+        <source>Send coins to a FairQuark address</source>
+        <translation>Send FairQuarks til en FairQuark-adresse</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for BitQuark</source>
-        <translation>Rediger konfigurationsindstillinger af BitQuark</translation>
+        <source>Modify configuration options for FairQuark</source>
+        <translation>Rediger konfigurationsindstillinger af FairQuark</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -460,8 +460,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>BitQuark</source>
-        <translation>BitQuark</translation>
+        <source>FairQuark</source>
+        <translation>FairQuark</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -485,8 +485,8 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About BitQuark</source>
-        <translation>Om BitQuark</translation>
+        <source>&amp;About FairQuark</source>
+        <translation>Om FairQuark</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -505,13 +505,13 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your BitQuark addresses to prove you own them</source>
-        <translation>Underskriv beskeder med dine BitQuark-adresser for at bevise, at de tilhører dig</translation>
+        <source>Sign messages with your FairQuark addresses to prove you own them</source>
+        <translation>Underskriv beskeder med dine FairQuark-adresser for at bevise, at de tilhører dig</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified BitQuark addresses</source>
-        <translation>Efterprøv beskeder for at sikre, at de er underskrevet med de(n) angivne BitQuark-adresse(r)</translation>
+        <source>Verify messages to ensure they were signed with specified FairQuark addresses</source>
+        <translation>Efterprøv beskeder for at sikre, at de er underskrevet med de(n) angivne FairQuark-adresse(r)</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -541,13 +541,13 @@ Produktet indeholder software som er udviklet af OpenSSL Project til brug i Open
     </message>
     <message>
         <location line="+47"/>
-        <source>BitQuark client</source>
-        <translation>BitQuark-klient</translation>
+        <source>FairQuark client</source>
+        <translation>FairQuark-klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to BitQuark network</source>
-        <translation><numerusform>%n aktiv(e) forbindelse(r) til BitQuark-netværket</numerusform><numerusform>%n aktiv(e) forbindelse(r) til BitQuark-netværket</numerusform></translation>
+        <source>%n active connection(s) to FairQuark network</source>
+        <translation><numerusform>%n aktiv(e) forbindelse(r) til FairQuark-netværket</numerusform><numerusform>%n aktiv(e) forbindelse(r) til FairQuark-netværket</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -661,8 +661,8 @@ Adresse: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid BitQuark address or malformed URI parameters.</source>
-        <translation>URI kan ikke fortolkes! Dette kan skyldes en ugyldig BitQuark-adresse eller misdannede URI-parametre.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid FairQuark address or malformed URI parameters.</source>
+        <translation>URI kan ikke fortolkes! Dette kan skyldes en ugyldig FairQuark-adresse eller misdannede URI-parametre.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -676,8 +676,8 @@ Adresse: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. BitQuark can no longer continue safely and will quit.</source>
-        <translation>Der opstod en fatal fejl. BitQuark kan ikke længere fortsætte sikkert og vil afslutte.</translation>
+        <source>A fatal error occurred. FairQuark can no longer continue safely and will quit.</source>
+        <translation>Der opstod en fatal fejl. FairQuark kan ikke længere fortsætte sikkert og vil afslutte.</translation>
     </message>
 </context>
 <context>
@@ -742,8 +742,8 @@ Adresse: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid BitQuark address.</source>
-        <translation>Den indtastede adresse &quot;%1&quot; er ikke en gyldig BitQuark-adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid FairQuark address.</source>
+        <translation>Den indtastede adresse &quot;%1&quot; er ikke en gyldig FairQuark-adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -761,8 +761,8 @@ Adresse: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>BitQuark-Qt</source>
-        <translation>BitQuark-Qt</translation>
+        <source>FairQuark-Qt</source>
+        <translation>FairQuark-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -824,13 +824,13 @@ Adresse: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start BitQuark after logging in to the system.</source>
-        <translation>Start BitQuark automatisk, når der logges ind på systemet</translation>
+        <source>Automatically start FairQuark after logging in to the system.</source>
+        <translation>Start FairQuark automatisk, når der logges ind på systemet</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start BitQuark on system login</source>
-        <translation>Start BitQuark, når systemet startes</translation>
+        <source>&amp;Start FairQuark on system login</source>
+        <translation>Start FairQuark, når systemet startes</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -849,8 +849,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the BitQuark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åbn BitQuark-klientens port på routeren automatisk. Dette virker kun, når din router understøtter UPnP og UPnP er aktiveret.</translation>
+        <source>Automatically open the FairQuark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åbn FairQuark-klientens port på routeren automatisk. Dette virker kun, når din router understøtter UPnP og UPnP er aktiveret.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -859,8 +859,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the BitQuark network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Opret forbindelse til BitQuark-netværket via en SOCKS-proxy (f.eks. ved tilslutning gennem Tor)</translation>
+        <source>Connect to the FairQuark network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Opret forbindelse til FairQuark-netværket via en SOCKS-proxy (f.eks. ved tilslutning gennem Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -934,8 +934,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting BitQuark.</source>
-        <translation>Brugergrænsefladesproget kan angives her. Denne indstilling træder først i kraft, når BitQuark genstartes.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FairQuark.</source>
+        <translation>Brugergrænsefladesproget kan angives her. Denne indstilling træder først i kraft, når FairQuark genstartes.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -945,12 +945,12 @@ Adresse: %4
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Vælg den standard underopdelingsenhed, som skal vises i brugergrænsefladen og ved afsendelse af BitQuarks.</translation>
+        <translation>Vælg den standard underopdelingsenhed, som skal vises i brugergrænsefladen og ved afsendelse af FairQuarks.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show BitQuark addresses in the transaction list or not.</source>
-        <translation>Afgør hvorvidt BitQuark-adresser skal vises i transaktionslisten eller ej.</translation>
+        <source>Whether to show FairQuark addresses in the transaction list or not.</source>
+        <translation>Afgør hvorvidt FairQuark-adresser skal vises i transaktionslisten eller ej.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1001,8 +1001,8 @@ Adresse: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting BitQuark.</source>
-        <translation>Denne indstilling træder i kraft, efter BitQuark genstartes.</translation>
+        <source>This setting will take effect after restarting FairQuark.</source>
+        <translation>Denne indstilling træder i kraft, efter FairQuark genstartes.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1020,8 +1020,8 @@ Adresse: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitQuark network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med BitQuark-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FairQuark network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med FairQuark-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1074,8 +1074,8 @@ Adresse: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start BitQuark: click-to-pay handler</source>
-        <translation>Kan ikke starte BitQuark: click-to-pay-håndtering</translation>
+        <source>Cannot start FairQuark: click-to-pay handler</source>
+        <translation>Kan ikke starte FairQuark: click-to-pay-håndtering</translation>
     </message>
 </context>
 <context>
@@ -1224,8 +1224,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the BitQuark-Qt help message to get a list with possible BitQuark command-line options.</source>
-        <translation>Vis BitQuark-Qt-hjælpebeskeden for at få en liste over de tilgængelige BitQuark-kommandolinjeindstillinger.</translation>
+        <source>Show the FairQuark-Qt help message to get a list with possible FairQuark command-line options.</source>
+        <translation>Vis FairQuark-Qt-hjælpebeskeden for at få en liste over de tilgængelige FairQuark-kommandolinjeindstillinger.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1244,13 +1244,13 @@ Adresse: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>BitQuark - Debug window</source>
-        <translation>BitQuark - Fejlsøgningsvindue</translation>
+        <source>FairQuark - Debug window</source>
+        <translation>FairQuark - Fejlsøgningsvindue</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>BitQuark Core</source>
-        <translation>BitQuark Core</translation>
+        <source>FairQuark Core</source>
+        <translation>FairQuark Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1259,8 +1259,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the BitQuark debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn BitQuark-fejlsøgningslogfilen fra det nuværende datakatalog. Dette kan tage nogle få sekunder for en store logfiler.</translation>
+        <source>Open the FairQuark debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn FairQuark-fejlsøgningslogfilen fra det nuværende datakatalog. Dette kan tage nogle få sekunder for en store logfiler.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1269,8 +1269,8 @@ Adresse: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the BitQuark RPC console.</source>
-        <translation>Velkommen til BitQuark RPC-konsollen</translation>
+        <source>Welcome to the FairQuark RPC console.</source>
+        <translation>Velkommen til FairQuark RPC-konsollen</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1295,7 +1295,7 @@ Adresse: %4
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Send BitQuarks</translation>
+        <translation>Send FairQuarks</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1345,7 +1345,7 @@ Adresse: %4
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Bekræft afsendelse af BitQuarks</translation>
+        <translation>Bekræft afsendelse af FairQuarks</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1390,7 +1390,7 @@ Adresse: %4
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine BitQuarks i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine BitQuarks er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
+        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine FairQuarks i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine FairQuarks er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
     </message>
 </context>
 <context>
@@ -1412,8 +1412,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>BitQuark-adressen som betalingen skal sendes til (f.eks. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>The address to send the payment to (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>FairQuark-adressen som betalingen skal sendes til (f.eks. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1453,8 +1453,8 @@ Adresse: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a BitQuark address (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Indtast en BitQuark-adresse (f.eks. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a FairQuark address (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Indtast en FairQuark-adresse (f.eks. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
 </context>
 <context>
@@ -1472,12 +1472,12 @@ Adresse: %4
     <message>
         <location line="+6"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Du kan underskrive beskeder med dine BitQuark-adresser for at bevise, at de tilhører dig. Pas på ikke at underskrive noget vagt, da phisingangreb kan narre dig til at overdrage din identitet. Underskriv kun fuldt detaljerede udsagn, du er enig i.</translation>
+        <translation>Du kan underskrive beskeder med dine FairQuark-adresser for at bevise, at de tilhører dig. Pas på ikke at underskrive noget vagt, da phisingangreb kan narre dig til at overdrage din identitet. Underskriv kun fuldt detaljerede udsagn, du er enig i.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>BitQuark-adressen som beskeden skal underskrives med (f.eks. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>The address to sign the message with (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>FairQuark-adressen som beskeden skal underskrives med (f.eks. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1518,8 +1518,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this BitQuark address</source>
-        <translation>Underskriv denne besked for at bevise, at BitQuark-adressen tilhører dig</translation>
+        <source>Sign the message to prove you own this FairQuark address</source>
+        <translation>Underskriv denne besked for at bevise, at FairQuark-adressen tilhører dig</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1549,13 +1549,13 @@ Adresse: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>BitQuark-adressen som beskeden er underskrevet med (f.eks. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>The address the message was signed with (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>FairQuark-adressen som beskeden er underskrevet med (f.eks. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified BitQuark address</source>
-        <translation>Efterprøv beskeden for at sikre, at den er underskrevet med den angivne BitQuark-adresse</translation>
+        <source>Verify the message to ensure it was signed with the specified FairQuark address</source>
+        <translation>Efterprøv beskeden for at sikre, at den er underskrevet med den angivne FairQuark-adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1570,8 +1570,8 @@ Adresse: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a BitQuark address (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Indtast en BitQuark-adresse (f.eks. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQPjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a FairQuark address (e.g. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Indtast en FairQuark-adresse (f.eks. qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1580,8 +1580,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter BitQuark signature</source>
-        <translation>Indtast BitQuark-underskriften</translation>
+        <source>Enter FairQuark signature</source>
+        <translation>Indtast FairQuark-underskriften</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1659,8 +1659,8 @@ Adresse: %4
     </message>
 	<message>
         <location line="+1"/>
-        <source>The BitQuark developers</source>
-        <translation>BitQuark-udviklerne</translation>
+        <source>The FairQuark developers</source>
+        <translation>FairQuark-udviklerne</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1794,7 +1794,7 @@ Adresse: %4
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 240 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Genererede BitQuarks skal vente 240 blokke, før de kan blive brugt. Da du genererede denne blok, blev den transmitteret til netværket for at blive føjet til blokkæden. Hvis det mislykkes at komme ind i kæden, vil den skifte til &quot;ikke godkendt&quot; og ikke blive kunne bruges. Dette kan lejlighedsvis ske, hvis en anden knude genererer en blok inden for få sekunder af din.</translation>
+        <translation>Genererede FairQuarks skal vente 240 blokke, før de kan blive brugt. Da du genererede denne blok, blev den transmitteret til netværket for at blive føjet til blokkæden. Hvis det mislykkes at komme ind i kæden, vil den skifte til &quot;ikke godkendt&quot; og ikke blive kunne bruges. Dette kan lejlighedsvis ske, hvis en anden knude genererer en blok inden for få sekunder af din.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2147,7 +2147,7 @@ Adresse: %4
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation>Send BitQuarks</translation>
+        <translation>Send FairQuarks</translation>
     </message>
 </context>
 <context>
@@ -2194,11 +2194,11 @@ Adresse: %4
     </message>
 </context>
 <context>
-    <name>BitQuark-core</name>
+    <name>FairQuark-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>BitQuark version</source>
-        <translation>BitQuark-version</translation>
+        <source>FairQuark version</source>
+        <translation>FairQuark-version</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2207,8 +2207,8 @@ Adresse: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or BitQuarkd</source>
-        <translation>Send kommando til -server eller BitQuarkd</translation>
+        <source>Send command to -server or FairQuarkd</source>
+        <translation>Send kommando til -server eller FairQuarkd</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2227,13 +2227,13 @@ Adresse: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: BitQuark.conf)</source>
-        <translation>Angiv konfigurationsfil (standard: BitQuark.conf)</translation>
+        <source>Specify configuration file (default: FairQuark.conf)</source>
+        <translation>Angiv konfigurationsfil (standard: FairQuark.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: BitQuarkd.pid)</source>
-        <translation>Angiv pid-fil (default: BitQuarkd.pid)</translation>
+        <source>Specify pid file (default: FairQuarkd.pid)</source>
+        <translation>Angiv pid-fil (default: FairQuarkd.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2310,24 +2310,24 @@ Adresse: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=BitQuarkrpc
+rpcuser=FairQuarkrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;FairQuark Alert&quot; admin@foo.com
 </source>
         <translation>%s, du skal angive en RPC-adgangskode i konfigurationsfilen:
 %s
 Det anbefales, at du bruger nedenstående, tilfældige adgangskode:
-rpcuser=BitQuarkrpc
+rpcuser=FairQuarkrpc
 rpcpassword=%s
 (du behøver ikke huske denne adgangskode)
 Brugernavnet og adgangskode MÅ IKKE være det samme.
 Hvis filen ikke eksisterer, opret den og giv ingen andre end ejeren læserettighed.
 Det anbefales også at angive alertnotify, så du påmindes om problemer;
-f.eks.: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
+f.eks.: alertnotify=echo %%s | mail -s &quot;FairQuark Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2342,18 +2342,18 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. BitQuark is probably already running.</source>
-        <translation>Kan ikke opnå lås på datakatalog %s. BitQuark er sandsynligvis allerede startet.</translation>
+        <source>Cannot obtain a lock on data directory %s. FairQuark is probably already running.</source>
+        <translation>Kan ikke opnå lås på datakatalog %s. FairQuark er sandsynligvis allerede startet.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine BitQuarks i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine BitQuarks er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
+        <translation>Fejl: Transaktionen blev afvist. Dette kan ske, hvis nogle af dine FairQuarks i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine FairQuarks er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på minimum %s pga. dens størrelse, kompleksitet eller anvendelse af nyligt modtagne BitQuarks!</translation>
+        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på minimum %s pga. dens størrelse, kompleksitet eller anvendelse af nyligt modtagne FairQuarks!</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2387,8 +2387,8 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BitQuark will not work properly.</source>
-        <translation>Advarsel: Undersøg venligst, at din computers dato og klokkeslæt er korrekt indstillet! Hvis der er fejl i disse, vil BitQuark ikke fungere korrekt.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FairQuark will not work properly.</source>
+        <translation>Advarsel: Undersøg venligst, at din computers dato og klokkeslæt er korrekt indstillet! Hvis der er fejl i disse, vil FairQuark ikke fungere korrekt.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2508,7 +2508,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     <message>
         <location line="+1"/>
         <source>Failed to write to coin database</source>
-        <translation>Skrivning af BitQuark-database mislykkedes</translation>
+        <translation>Skrivning af FairQuark-database mislykkedes</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2528,7 +2528,7 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     <message>
         <location line="+1"/>
         <source>Generate coins (default: 0)</source>
-        <translation>Generer BitQuarks (standard: 0)</translation>
+        <translation>Generer FairQuarks (standard: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2637,8 +2637,8 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the BitQuark Wiki for SSL setup instructions)</source>
-        <translation>SSL-indstillinger: (se BitQuark Wiki for SSL-opsætningsinstruktioner)</translation>
+        <source>SSL options: (see the FairQuark Wiki for SSL setup instructions)</source>
+        <translation>SSL-indstillinger: (se FairQuark Wiki for SSL-opsætningsinstruktioner)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2827,13 +2827,13 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of BitQuark</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebog kræver en nyere version af BitQuark</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FairQuark</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebog kræver en nyere version af FairQuark</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart BitQuark to complete</source>
-        <translation>Det var nødvendigt at genskrive tegnebogen: genstart BitQuark for at gennemføre</translation>
+        <source>Wallet needed to be rewritten: restart FairQuark to complete</source>
+        <translation>Det var nødvendigt at genskrive tegnebogen: genstart FairQuark for at gennemføre</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2892,8 +2892,8 @@ f.eks.: alertnotify=echo %%s | mail -s &quot;BitQuark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. BitQuark is probably already running.</source>
-        <translation>Kunne ikke tildele %s på denne computer. BitQuark kører sikkert allerede.</translation>
+        <source>Unable to bind to %s on this computer. FairQuark is probably already running.</source>
+        <translation>Kunne ikke tildele %s på denne computer. FairQuark kører sikkert allerede.</translation>
     </message>
     <message>
         <location line="+64"/>

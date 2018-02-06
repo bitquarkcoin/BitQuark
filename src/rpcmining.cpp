@@ -93,7 +93,7 @@ Value GetNetworkHashPS(int lookup) {
 
 
 
-    return (boost::int64_t)(((double)GetDifficulty() * 16000000) / timePerBlock);
+    return (boost::int64_t)((((double)GetDifficulty() * pow(2.0, 32)) / timePerBlock)/256);
 
 }
 

@@ -35,9 +35,9 @@ then execute the following:
     qmake
     make
 
-Alternatively, install `Qt Creator`_ and open the `bitquark-qt.pro` file.
+Alternatively, install `Qt Creator`_ and open the `bitcoin-qt.pro` file.
 
-An executable named `bitquark-qt` will be built.
+An executable named `bitcoin-qt` will be built.
 
 .. _`Qt Creator`: http://qt-project.org/downloads/
 
@@ -62,11 +62,11 @@ Mac OS X
 	brew update
 	brew install boost miniupnpc openssl berkeley-db4
 
-- If using HomeBrew,  edit `bitquark-qt.pro` to account for library location differences. There's a diff in `contrib/homebrew/bitquark-qt-pro.patch` that shows what you need to change, or you can just patch by doing
+- If using HomeBrew,  edit `bitcoin-qt.pro` to account for library location differences. There's a diff in `contrib/homebrew/bitcoin-qt-pro.patch` that shows what you need to change, or you can just patch by doing
 
         patch -p1 < contrib/homebrew/bitcoin.qt.pro.patch
 
-- Open the bitquark-qt.pro file in Qt Creator and build as normal (cmd-B)
+- Open the bitcoin-qt.pro file in Qt Creator and build as normal (cmd-B)
 
 .. _`Qt Mac OS X SDK`: http://qt-project.org/downloads/
 .. _`MacPorts`: http://www.macports.org/install.php
@@ -144,7 +144,7 @@ Ubuntu 11.10 warning
 ====================
 
 Ubuntu 11.10 has a package called 'qt-at-spi' installed by default.  At the time of writing, having that package
-installed causes bitquark-qt to crash intermittently.  The issue has been reported as `launchpad bug 857790`_, but
+installed causes bitcoin-qt to crash intermittently.  The issue has been reported as `launchpad bug 857790`_, but
 isn't yet fixed.
 
 Until the bug is fixed, you can remove the qt-at-spi package to work around the problem, though this will presumably

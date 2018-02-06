@@ -87,4 +87,4 @@ DOS prompt:
 
 	cd \bitcoin\src
 	mingw32-make -f makefile.mingw
-	strip bitquarkd.exe
+	strip bitcoind.exe

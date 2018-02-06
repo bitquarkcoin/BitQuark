@@ -9,7 +9,7 @@ Release Process
 ###update (commit) version in sources
 
 
-	bitquark-qt.pro
+	bitcoin-qt.pro
 	contrib/verifysfbinaries/verify.sh
 	doc/README*
 	share/setup.nsi
@@ -52,7 +52,7 @@ Release Process
 	./bin/gbuild ../bitcoin/contrib/gitian-descriptors/deps-win32.yml
 	mv build/out/bitcoin-deps-0.0.5.zip inputs/
 
- Build bitquarkd and bitquark-qt on Linux32, Linux64, and Win32:
+ Build bitcoind and bitcoin-qt on Linux32, Linux64, and Win32:
   
 	./bin/gbuild --commit bitcoin=v${VERSION} ../bitcoin/contrib/gitian-descriptors/gitian.yml
 	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../bitcoin/contrib/gitian-descriptors/gitian.yml
@@ -92,7 +92,7 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 
   OSX binaries are created by Gavin Andresen on a 32-bit, OSX 10.6 machine.
 
-	qmake RELEASE=1 USE_UPNP=1 USE_QRCODE=1 bitquark-qt.pro
+	qmake RELEASE=1 USE_UPNP=1 USE_QRCODE=1 bitcoin-qt.pro
 	make
 	export QTDIR=/opt/local/share/qt4  # needed to find translations/qt_*.qm files
 	T=$(contrib/qt_translations.py $QTDIR/translations src/qt/locale)
