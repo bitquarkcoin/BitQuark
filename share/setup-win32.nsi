@@ -1,11 +1,11 @@
-Name BitQuark
+Name "BitQuark (32-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.8.3.17
+!define VERSION 0.8.3.20
 !define COMPANY "BitQuark project"
 !define URL http://www.bitquark.info/
 
@@ -20,7 +20,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER BitQuark
-!define MUI_FINISHPAGE_RUN $INSTDIR\bitquark-qt.exe
+!define MUI_FINISHPAGE_RUN $INSTDIR\BitQuark-Qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
@@ -45,13 +45,13 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile bitquark-0.8.3r17-win32-setup.exe
+OutFile BitQuark-${VERSION}-win32-setup.exe
 InstallDir $PROGRAMFILES\BitQuark
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 0.8.3.17
+VIProductVersion 0.8.3.20
 VIAddVersionKey ProductName BitQuark
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
@@ -66,7 +66,7 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File ../release/bitquark-qt.exe
+    File ../release/BitQuark-Qt.exe
     File /oname=COPYING.txt ../COPYING
     File /oname=readme.txt ../doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
@@ -83,7 +83,7 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\BitQuark.lnk" $INSTDIR\bitquark-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\BitQuark.lnk" $INSTDIR\BitQuark-Qt.exe
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall BitQuark.lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -96,8 +96,8 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     WriteRegStr HKCR "bitquark" "URL Protocol" ""
     WriteRegStr HKCR "bitquark" "" "URL:BitQuark"
-    WriteRegStr HKCR "bitquark\DefaultIcon" "" $INSTDIR\bitquark-qt.exe
-    WriteRegStr HKCR "bitquark\shell\open\command" "" '"$INSTDIR\bitquark-qt.exe" "%1"'
+    WriteRegStr HKCR "bitquark\DefaultIcon" "" $INSTDIR\BitQuark-Qt.exe
+    WriteRegStr HKCR "bitquark\shell\open\command" "" '"$INSTDIR\BitQuark-Qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -115,7 +115,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\bitquark-qt.exe
+    Delete /REBOOTOK $INSTDIR\BitQuark-Qt.exe
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -148,6 +148,15 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
+!if "@WINDOWS_BITS@" == "64"
+    ${If} ${RunningX64}
+      ; disable registry redirection (enable access to 64-bit portion of registry)
+      SetRegView 64
+    ${Else}
+      MessageBox MB_OK|MB_ICONSTOP "Cannot install 64-bit version on a 32-bit system."
+      Abort
+    ${EndIf}
+!endif
 FunctionEnd
 
 # Uninstaller functions

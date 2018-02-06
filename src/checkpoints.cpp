@@ -48,11 +48,16 @@ namespace Checkpoints
 		(255000, uint256("0x00000000ab81e659bf706d7462a3cad386fba3017111005f14aff5f3fd53b9c9"))
 		(265000, uint256("0x000000002ae1022e5f10d60fb9b13bb77fb657046c23102178bd7edbaf76d3a9"))
 		(310000, uint256("0x000000010e58ab78a6d23ec1ec4ec3e941adabba8c29cf1370ceabeecbb38f17"))
+		(500000, uint256("0x000000013b58b757cb2fdd405a02b1c31ce9d26ae9978489d310b284ed54ab2e"))
+		(750000, uint256("0x000000003740a6fe3bd10d950ade27f69919d41898fb2f73908cdb49ab55bb12"))
+		(1000000, uint256("0x000000011a8edf429a6cbf7d43ba1ec42a8ac97e58ac0f678ad8aef8466f77b3"))
+		(1200000, uint256("0x00000000dad0a79375e691817d6d677b9d23cd1a5a15743cf8bf8799dbf4dd31"))
+		(1340000, uint256("0x000000020617869d7a58cdd87572bec3ae23ad6138c0831cbeb1cb15862a37e0"))
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
-        1403337306, // * UNIX timestamp of last checkpoint block
-        310000,     // * total number of transactions between genesis and last checkpoint
+        1437103625, // * UNIX timestamp of last checkpoint block
+        1340000,     // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         2880.0      // * estimated number of transactions per day after checkpoint
     };
@@ -123,20 +128,18 @@ namespace Checkpoints
 
     int GetTotalBlocksEstimate()
     {
+	if (fTestNet) return 0;
         if (!GetBoolArg("-checkpoints", true))
             return 0;
 
         const MapCheckpoints& checkpoints = *Checkpoints().mapCheckpoints;
 
-//        return checkpoints.rbegin()->first;
-//REMOVE
-      return 0;
-
-
+        return checkpoints.rbegin()->first;
     }
 
     CBlockIndex* GetLastCheckpoint(const std::map<uint256, CBlockIndex*>& mapBlockIndex)
     {
+	if (fTestNet) return NULL;
         if (!GetBoolArg("-checkpoints", true))
             return NULL;
 
@@ -147,9 +150,7 @@ namespace Checkpoints
             const uint256& hash = i.second;
             std::map<uint256, CBlockIndex*>::const_iterator t = mapBlockIndex.find(hash);
             if (t != mapBlockIndex.end())
-//                return t->second;
-//REMOVE
-            return NULL;
+                return t->second;
         }
         return NULL;
     }

@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = bitquark-qt
+TARGET = BitQuark-Qt
 macx:TARGET = "BitQuark-Qt"
 VERSION = 0.8.3
 INCLUDEPATH += src src/json src/qt
@@ -22,17 +22,17 @@ CONFIG += static
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 
 # Uncomment dep locations below if building on Windows systems
-#BOOST_LIB_SUFFIX=-mgw48-mt-s-1_55
-#BOOST_INCLUDE_PATH=C:/deps/boost_1_55_0
-#BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
+#BOOST_LIB_SUFFIX=-mgw49-mt-s-1_57
+#BOOST_INCLUDE_PATH=C:/deps/boost_1_57_0
+#BOOST_LIB_PATH=C:/deps/boost_1_57_0/stage/lib
 #BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
 #BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
 #OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1g/include
 #OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1g
 #MINIUPNPC_INCLUDE_PATH=C:/deps/
 #MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-#QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.3
-#QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.3/.libs
+#QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
+#QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
 
 OBJECTS_DIR = build
 MOC_DIR = build
@@ -125,7 +125,7 @@ LIBS += $$PWD/src/leveldb/libleveldb.a $$PWD/src/leveldb/libmemenv.a
         QMAKE_RANLIB = $$replace(QMAKE_STRIP, strip, ranlib)
     }
     LIBS += -lshlwapi
-    #genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
+    genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
 }
 genleveldb.target = $$PWD/src/leveldb/libleveldb.a
 genleveldb.depends = FORCE
@@ -383,7 +383,7 @@ OTHER_FILES += README.md \
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
-    win32:BOOST_LIB_SUFFIX = -mgw48-mt-s-1_55
+    win32:BOOST_LIB_SUFFIX = -mgw49-mt-s-1_57
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {
