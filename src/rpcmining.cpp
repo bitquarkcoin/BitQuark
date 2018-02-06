@@ -91,6 +91,20 @@ Value gethashespersec(const Array& params, bool fHelp)
     return (boost::int64_t)dHashesPerSec;
 }
 
+Value moneysupply(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() > 1)
+        throw runtime_error(
+            "moneysupply\n"
+            "Returns total money supply.");
+			
+	int64 total_coins = 0;
+    for(int i=1; i <= nBestHeight; ++i) {
+    	total_coins += _GetBlockValue(i, 0, 0);
+		}
+
+    return ValueFromAmount((uint64)total_coins);
+}
 
 Value getmininginfo(const Array& params, bool fHelp)
 {
@@ -104,6 +118,7 @@ Value getmininginfo(const Array& params, bool fHelp)
     obj.push_back(Pair("currentblocksize",(uint64_t)nLastBlockSize));
     obj.push_back(Pair("currentblocktx",(uint64_t)nLastBlockTx));
     obj.push_back(Pair("difficulty",    (double)GetDifficulty()));
+    obj.push_back(Pair("currentblockvalue", ValueFromAmount((uint64_t)GetProofOfWorkReward(nBestHeight+1, 0))));
     obj.push_back(Pair("errors",        GetWarnings("statusbar")));
     obj.push_back(Pair("generate",      GetBoolArg("-gen")));
     obj.push_back(Pair("genproclimit",  (int)GetArg("-genproclimit", -1)));

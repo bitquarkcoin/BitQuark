@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.8.3.20
+!define VERSION 0.8.3.21
 !define COMPANY "BitQuark project"
 !define URL http://www.bitquark.info/
 
@@ -51,7 +51,7 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 0.8.3.20
+VIProductVersion 0.8.3.21
 VIAddVersionKey ProductName BitQuark
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"

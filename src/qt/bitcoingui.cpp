@@ -71,7 +71,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
 {
     restoreWindowGeometry();
 	resize(949, 527);
-    setWindowTitle(tr("BitQuark Wallet") + " - " + tr("v0.8.3.20"));
+    setWindowTitle(tr("BitQuark Wallet") + " - " + tr("v0.8.3.21"));
     // Prevent resizing.
     setFixedSize(size());
     // Remove "hand" cursor from status bar.

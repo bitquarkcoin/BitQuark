@@ -1,11 +1,11 @@
-BitQuark 0.8.3.20
+BitQuark 0.8.3.21
 ====================
 
-Copyright (c) 2009-2015 Bitcoin Developers
+Copyright (c) 2009-2017 Bitcoin Developers
 
-Copyright (c) 2013-2015 Quarkcoin Developers
+Copyright (c) 2013-2017 Quarkcoin Developers
 
-Copyright (c) 2014-2015 BitQuark Developers
+Copyright (c) 2014-2017 BitQuark Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -30,7 +30,7 @@ You need the Qt4 run-time libraries to run BitQuark-Qt. On Debian or Ubuntu:
 
 `sudo apt-get -y install gcc g++ autoconf automake make git zip unzip qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev libprotobuf-dev protobuf-compiler libqrencode-dev`
 
-`cd BitQuark-0.8.3r20`
+`cd BitQuark-0.8.3r21`
 
 ` wget -O- http://sourceforge.net/projects/libpng/files/libpng16/older-releases/1.6.10/libpng-1.6.10.tar.gz | tar -zxf -`
 
