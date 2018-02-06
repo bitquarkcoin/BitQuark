@@ -54,6 +54,7 @@
 #include <iostream>
 
 const QString BitcoinGUI::DEFAULT_WALLET = "~Default";
+const int BitcoinGUI::NumberOfBackgrounds = 10;
 
 BitcoinGUI::BitcoinGUI(QWidget *parent) :
     QMainWindow(parent),
@@ -66,14 +67,15 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
     rpcConsole(0),
     prevBlocks(0)
 {
-    resize(850, 550);
-    setWindowTitle(tr("BitQuark") + " - " + tr("Wallet"));
+    restoreWindowGeometry();
+	resize(949, 527);
+    setWindowTitle(tr("BitQuark Wallet") + " - " + tr("v0.8.3.18"));
     // Prevent resizing.
     setFixedSize(size());
     // Remove "hand" cursor from status bar.
     this->statusBar()->setSizeGripEnabled(false);
 
-    this->setStyleSheet(".BitcoinGUI { background-image: url(:/images/background-no-logo); } ");
+    this->setStyleSheet(".BitcoinGUI { background-image: url(:/images/bg1); } ");
 #ifndef Q_OS_MAC
     QApplication::setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
@@ -244,6 +246,19 @@ void BitcoinGUI::createActions()
     openRPCConsoleAction = new QAction(QIcon(":/icons/debugwindow"), tr("&Debug window"), this);
     openRPCConsoleAction->setStatusTip(tr("Open debugging and diagnostic console"));
 
+	// generate actions for changing skins
+    bgSignalMapper = new QSignalMapper (this) ;
+    changeBgAction = new QAction*[NumberOfBackgrounds];
+    for(int i = 0; i < BitcoinGUI::NumberOfBackgrounds; ++i)
+    {
+        QString bg_no = QString("Skin ").append(QString::number(i+1));
+        changeBgAction[i] = new QAction(bg_no, this);
+        changeBgAction[i]->setStatusTip(tr("Change wallet skin"));
+        connect(changeBgAction[i], SIGNAL(triggered()), bgSignalMapper, SLOT(map()));
+        bgSignalMapper->setMapping(changeBgAction[i], i);
+    }
+    connect(bgSignalMapper, SIGNAL(mapped(int)), this, SLOT(backgroundClicked(int))) ;
+	
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));
     connect(aboutQtAction, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
@@ -279,6 +294,12 @@ void BitcoinGUI::createMenuBar()
     settings->addAction(changePassphraseAction);
     settings->addSeparator();
     settings->addAction(optionsAction);
+	settings->addSeparator();
+    QMenu *background = settings->addMenu(tr("&Skins"));
+    for(int i = 0; i < BitcoinGUI::NumberOfBackgrounds; ++i)
+    {
+        background->addAction(changeBgAction[i]);
+    }
 
     QMenu *help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(openRPCConsoleAction);
@@ -821,4 +842,10 @@ void BitcoinGUI::detectShutdown()
 {
     if (ShutdownRequested())
         QMetaObject::invokeMethod(QCoreApplication::instance(), "quit", Qt::QueuedConnection);
+}
+
+void BitcoinGUI::backgroundClicked(int bgNumber)
+{
+    QString styleSheet = QString(".BitcoinGUI{background-image: url(:/images/bg%1);}").arg(bgNumber+1);
+    this->setStyleSheet(styleSheet);
 }

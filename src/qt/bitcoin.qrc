@@ -44,9 +44,17 @@
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
         <file alias="splash">res/images/splash.png</file>
-		<file alias="background-no-logo">res/images/background1.png</file>
         <file alias="splash_testnet">res/images/splash_testnet.png</file>
         <file alias="wallet_bgcoin">res/images/wallet_bgcoin.png</file>
+		<file alias="bg1">res/images/bg1.png</file>
+        <file alias="bg2">res/images/bg2.png</file>
+		<file alias="bg3">res/images/bg3.png</file>
+		<file alias="bg4">res/images/bg4.png</file>
+		<file alias="bg5">res/images/bg5.png</file>
+		<file alias="bg6">res/images/bg6.png</file>
+		<file alias="bg7">res/images/bg7.png</file>
+		<file alias="bg8">res/images/bg8.png</file>
+		<file alias="bg9">res/images/bg9.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>

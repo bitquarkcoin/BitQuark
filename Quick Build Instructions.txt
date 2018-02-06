@@ -1,4 +1,11 @@
 Quick Start for building bitquarkd in Unix/Linux
+
+You can run the "AutoBuild.sh" script from your Linux terminal and it will download and build bitquarkd and bitquark-qt for you.
+From terminal, just run the following:
+chmod +x ./AutoBuild
+./AutoBuild
+
+Manual build instructions:
 -----------------------------------
 sudo apt-get install build-essential
 sudo apt-get install libssl-dev
@@ -28,6 +35,9 @@ apt-get install qt4-qmake libqt4-dev build-essential libboost-dev libboost-syste
 
 An executable named `bitquark-qt` will be built.
 Alternatively, install `Qt Creator`_ and open the `bitquark-qt.pro` file.
+
+***Windows NOTE for building leveldb:
+TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
 
 ***Deps
 http://www.openssl.org/source/openssl-1.0.1g.tar.gz

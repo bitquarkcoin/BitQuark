@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QSystemTrayIcon>
+#include <QSignalMapper>
 #include <QMap>
 
 class TransactionTableModel;
@@ -42,6 +43,7 @@ class BitcoinGUI : public QMainWindow
 
 public:
     static const QString DEFAULT_WALLET;
+	static const int NumberOfBackgrounds;
 
     explicit BitcoinGUI(QWidget *parent = 0);
     ~BitcoinGUI();
@@ -102,7 +104,10 @@ private:
     QAction *changePassphraseAction;
     QAction *aboutQtAction;
     QAction *openRPCConsoleAction;
+	QAction **changeBgAction;
 
+	QSignalMapper* bgSignalMapper;
+	
     QSystemTrayIcon *trayIcon;
     Notificator *notificator;
     TransactionView *transactionView;
@@ -193,6 +198,9 @@ private slots:
 
     /** called by a timer to check if fRequestShutdown has been set **/
     void detectShutdown();
+	
+	/** change background */
+    void backgroundClicked(int bgNumber);
 };
 
 #endif // BITCOINGUI_H

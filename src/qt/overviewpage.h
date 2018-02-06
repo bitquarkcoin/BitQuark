@@ -31,6 +31,7 @@ public:
 public slots:
     void setBalance(qint64 balance, qint64 unconfirmedBalance, qint64 immatureBalance);
 	void setNumTransactions(int count);
+	void setNetworkInfo(int count, int nTotalBlocks);
 
 signals:
     void transactionClicked(const QModelIndex &index);
