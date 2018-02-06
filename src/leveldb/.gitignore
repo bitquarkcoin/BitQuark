@@ -1,4 +1,5 @@
 build_config.mk
+*.exe
 *.o
 *.dylib*
 *.so

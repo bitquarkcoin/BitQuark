@@ -150,6 +150,9 @@
               <property name="toolTip">
                <string>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</string>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel { color: green; }</string>
+              </property>
               <property name="text">
                <string notr="true">0 BTQ</string>
               </property>
@@ -175,6 +178,9 @@
               </property>
               <property name="toolTip">
                <string>Mined balance that has not yet matured</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel { color: red; }</string>
               </property>
               <property name="text">
                <string notr="true">0 BTQ</string>

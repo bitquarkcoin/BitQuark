@@ -156,6 +156,7 @@ void OptionsDialog::setMapper()
     mapper->addMapping(ui->lang, OptionsModel::Language);
     mapper->addMapping(ui->unit, OptionsModel::DisplayUnit);
     mapper->addMapping(ui->displayAddresses, OptionsModel::DisplayAddresses);
+	mapper->addMapping(ui->coinControlFeatures, OptionsModel::CoinControlFeatures);
     
     /* Mining */
     mapper->addMapping(ui->checkboxMiningEnabled, OptionsModel::MiningEnabled);
