@@ -11,27 +11,6 @@
 using namespace json_spirit;
 using namespace std;
 
-// Return average network hashes per second based on the last 'lookup' blocks,
-// or from the last difficulty change if 'lookup' is nonpositive.
-// If 'height' is nonnegative, compute the estimate at the time when a given block was found.
-boost::int64_t GetNetworkHashPS(int lookup, int height) {
-      
-   if (pindexBest == NULL)
-       return 0;
-// If lookup is larger than chain, then set it to chain length.
-   if (lookup > pindexBest->nHeight)
-       lookup = pindexBest->nHeight;
-
-   CBlockIndex* pindexPrev = pindexBest;
-   for (int i = 0; i < lookup; i++)
-        pindexPrev = pindexPrev->pprev;
-
-  double timeDiff = pindexBest->GetBlockTime() - pindexPrev->GetBlockTime();
-  double timePerBlock = timeDiff / lookup;
-
-  return (boost::int64_t)((((double)GetDifficulty() * pow(2.0, 32)) / timePerBlock)/256);
-}
-
 Value getgenerate(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 0)
@@ -68,6 +47,37 @@ Value setgenerate(const Array& params, bool fHelp)
     return Value::null;
 }
 
+// Return average network hashes per second based on the last 'lookup' blocks,
+// or from the last difficulty change if 'lookup' is nonpositive.
+// If 'height' is nonnegative, compute the estimate at the time when a given block was found.
+boost::int64_t GetNetworkHashPS(int lookup, int height) {     
+   if (pindexBest == NULL)
+       return 0;
+// If lookup is larger than chain, then set it to chain length.
+   if (lookup > pindexBest->nHeight)
+       lookup = pindexBest->nHeight;
+
+   CBlockIndex* pindexPrev = pindexBest;
+   for (int i = 0; i < lookup; i++)
+        pindexPrev = pindexPrev->pprev;
+
+  double timeDiff = pindexBest->GetBlockTime() - pindexPrev->GetBlockTime();
+  double timePerBlock = timeDiff / lookup;
+
+  return (boost::int64_t)(((double)GetDifficulty() * pow(2.0, 25)) / timePerBlock);
+}
+
+Value getnetworkhashps(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() > 2)
+        throw runtime_error(
+            "getnetworkhashps [blocks] [height]\n"
+            "Returns the estimated network hashes per second based on the last 24 blocks.\n"
+            "Pass in [blocks] to override # of blocks, -1 specifies since last difficulty change.\n"
+            "Pass in [height] to estimate the network speed at the time when a certain block was found.");
+
+    return GetNetworkHashPS(params.size() > 0 ? params[0].get_int() : 24, params.size() > 1 ? params[1].get_int() : -1);
+}
 
 Value gethashespersec(const Array& params, bool fHelp)
 {
@@ -79,21 +89,6 @@ Value gethashespersec(const Array& params, bool fHelp)
     if (GetTimeMillis() - nHPSTimerStart > 8000)
         return (boost::int64_t)0;
     return (boost::int64_t)dHashesPerSec;
-}
-
-
-// BitQuark: Return average network hashes per second based on last number of blocks.
-
-Value getnetworkhashps(const Array& params, bool fHelp)
-{
-    if (fHelp || params.size() > 1)
-        throw runtime_error(
-            "getnetworkhashps [blocks] [height]\n"
-            "Returns the estimated network hashes per second based on the last 20 blocks.\n"
-            "Pass in [blocks] to override # of blocks, -1 specifies since last difficulty change.\n"
-            "Pass in [height] to estimate the network speed at the time when a certain block was found.");
-
-    return GetNetworkHashPS(params.size() > 0 ? params[0].get_int() : 1440, params.size() > 1 ? params[1].get_int() : -1);
 }
 
 

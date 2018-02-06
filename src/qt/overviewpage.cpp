@@ -71,7 +71,7 @@ public:
             foreground = option.palette.color(QPalette::Text);
         }
         painter->setPen(foreground);
-        QString amountText = BitcoinUnits::formatWithUnit(unit, amount, true);
+        QString amountText = BitcoinUnits::formatWithUnit(unit, amount, true, BitcoinUnits::separatorAlways);
         if(!confirmed)
         {
             amountText = QString("[") + amountText + QString("]");
@@ -140,9 +140,9 @@ void OverviewPage::setBalance(qint64 balance, qint64 unconfirmedBalance, qint64 
     currentBalance = balance;
     currentUnconfirmedBalance = unconfirmedBalance;
     currentImmatureBalance = immatureBalance;
-    ui->labelBalance->setText(BitcoinUnits::formatWithUnit(unit, balance));
-    ui->labelUnconfirmed->setText(BitcoinUnits::formatWithUnit(unit, unconfirmedBalance));
-    ui->labelImmature->setText(BitcoinUnits::formatWithUnit(unit, immatureBalance));
+	ui->labelBalance->setText(BitcoinUnits::formatWithUnit(unit, balance, false, BitcoinUnits::separatorAlways));
+    ui->labelUnconfirmed->setText(BitcoinUnits::formatWithUnit(unit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelImmature->setText(BitcoinUnits::formatWithUnit(unit, immatureBalance, false, BitcoinUnits::separatorAlways));
 
     // only show immature (newly mined) balance if it's non-zero, so as not to complicate things
     // for the non-mining users
@@ -158,8 +158,8 @@ void OverviewPage::setNetworkInfo(int count, int nTotalBlocks)
     for(int i=1; i <= nBestHeight; ++i) {
     	total_coins += _GetBlockValue(i, 0, 0);
     }
-    ui->labelTotalCoins->setText(BitcoinUnits::formatWithUnit(unit, total_coins));
-    ui->labelHashrate->setText(QString("%1 hps").arg(GetNetworkHashPS(1440, -1)));
+    ui->labelTotalCoins->setText(BitcoinUnits::formatWithUnit(unit, total_coins, false, BitcoinUnits::separatorAlways));
+    ui->labelHashrate->setText(QString("%1 Mhs").arg(GetNetworkHashPS(24, -1)/1000000));
 }
 
 void OverviewPage::setNumTransactions(int count)

@@ -36,6 +36,7 @@ unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 uint256 hashGenesisBlock("0x00000b9cf0b9bb2437283f28d378e5f9644c643f25e1c80b2cd9fdd6510d33f1");
+uint256 hashGenesisBlockTestNet("0x0000070a4ce2dcc31f05a3b6c115813b10d1b4f075992c14c2204499843cb34c");
 static const unsigned int timeGenesisBlock = 1388710861;
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20);
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -1078,11 +1079,11 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 }
 
 static const int64 nGenesisBlockRewardCoin = 1 * COIN;
-static const int64 nBlockRewardStartCoin = 2.50 * COIN;
-static const int64 nBlockRewardMinimumCoin = 0.01 * COIN;
+static const int64 nBlockRewardStartCoin = 2.50 * COIN; // 7200 BTQ per day
+static const int64 nBlockRewardMinimumCoin = 0.1 * COIN; // 288 BTQ per day minimum
 
-static const int64 nTargetTimespan = 10 * 60; // 60*60 //60 minutes
-static const int64 nTargetSpacing = 30; // 60 //60 seconds
+static const int64 nTargetTimespan = 10 * 60; // 10 minutes
+static const int64 nTargetSpacing = 30; // 30 seconds
 static const int64 nInterval = nTargetTimespan / nTargetSpacing; // 20 blocks
 
 int64 static GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
@@ -1282,13 +1283,79 @@ unsigned int static DarkGravityWave2(const CBlockIndex* pindexLast, const CBlock
 	return bnNew.GetCompact();
 }
 
+unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlockHeader *pblock) {
+    /* current difficulty formula, darkcoin - DarkGravity v3, written by Evan Duffield - evan@darkcoin.io */
+    const CBlockIndex *BlockLastSolved = pindexLast;
+    const CBlockIndex *BlockReading = pindexLast;
+    const CBlockHeader *BlockCreating = pblock;
+    BlockCreating = BlockCreating;
+    int64 nActualTimespan = 0;
+    int64 LastBlockTime = 0;
+    int64 PastBlocksMin = 24;
+    int64 PastBlocksMax = 24;
+    int64 CountBlocks = 0;
+    CBigNum PastDifficultyAverage;
+    CBigNum PastDifficultyAveragePrev;
+
+    if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || BlockLastSolved->nHeight < PastBlocksMin) { 
+        return bnProofOfWorkLimit.GetCompact(); 
+    }
+        
+    for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
+        if (PastBlocksMax > 0 && i > PastBlocksMax) { break; }
+        CountBlocks++;
+
+        if(CountBlocks <= PastBlocksMin) {
+            if (CountBlocks == 1) { PastDifficultyAverage.SetCompact(BlockReading->nBits); }
+            else { PastDifficultyAverage = ((PastDifficultyAveragePrev * CountBlocks)+(CBigNum().SetCompact(BlockReading->nBits))) / (CountBlocks+1); }
+            PastDifficultyAveragePrev = PastDifficultyAverage;
+        }
+
+        if(LastBlockTime > 0){
+            int64 Diff = (LastBlockTime - BlockReading->GetBlockTime());
+            nActualTimespan += Diff;
+        }
+        LastBlockTime = BlockReading->GetBlockTime();      
+
+        if (BlockReading->pprev == NULL) { assert(BlockReading); break; }
+        BlockReading = BlockReading->pprev;
+    }
+    
+    CBigNum bnNew(PastDifficultyAverage);
+
+    int64 nTargetTimespan = CountBlocks*nTargetSpacing;
+
+    if (nActualTimespan < nTargetTimespan/3)
+        nActualTimespan = nTargetTimespan/3;
+    if (nActualTimespan > nTargetTimespan*3)
+        nActualTimespan = nTargetTimespan*3;
+
+    // Retarget
+    bnNew *= nActualTimespan;
+    bnNew /= nTargetTimespan;
+	/// debug print
+	printf("DarkGravityWave3 RETARGET\n");
+	printf("nTargetTimespan = %"PRI64d"    nActualTimespan = %"PRI64d"\n", nTargetTimespan, nActualTimespan);
+	printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
+	printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
+	
+    if (bnNew > bnProofOfWorkLimit){
+        bnNew = bnProofOfWorkLimit;
+    }
+     
+    return bnNew.GetCompact();
+}
+
+
 unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock) {
 	if( fTestNet ) {
-		if( pindexLast->nHeight+1 >= 10 ) {
-			return DarkGravityWave2(pindexLast, pblock);
+		if( pindexLast->nHeight+1 >= 0 ) {
+			return DarkGravityWave3(pindexLast, pblock);
 		}
 	} else {
-		if( pindexLast->nHeight+1 >= 1200000 ) {
+		if( pindexLast->nHeight+1 >= 1360000 ) {
+			return DarkGravityWave3(pindexLast, pblock);
+		} else if( pindexLast->nHeight+1 >= 1200000 ) {
 			return DarkGravityWave2(pindexLast, pblock);
 		}
 	}
@@ -2871,7 +2938,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0x1A;
         pchMessageStart[2] = 0x39;
         pchMessageStart[3] = 0xF8;
-        hashGenesisBlock = uint256("0x00000e5e37c42d6b67d0934399adfb0fa48b59138abb1a8842c88f4ca3d4ec96");
+        hashGenesisBlock = uint256("0x0000070a4ce2dcc31f05a3b6c115813b10d1b4f075992c14c2204499843cb34c");
     }
 
     //
@@ -2937,8 +3004,9 @@ CBlock(hash=00000e5e37c42d6b67d0934399adfb0fa48b59138abb1a8842c88f4ca3d4ec96, ve
 
         if (fTestNet)
         {
-            block.nTime    = 1386926966;
-            block.nNonce   = 13080176;
+			pszTimestamp="Oct 11 2015, Russian strikes kill ISIS Leader!";
+            block.nTime    = 1444608501;
+            block.nNonce   = 1514109;
         }
 
         //// debug print

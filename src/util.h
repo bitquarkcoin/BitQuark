@@ -9,12 +9,13 @@
 
 #include <stdarg.h>
 
-#ifndef WIN32
 #include <sys/types.h>
 #include <sys/time.h>
+#ifndef WIN32
+typedef int pid_t; /* define for Windows compatibility */
 #include <sys/resource.h>
 #else
-typedef int pid_t; /* define for Windows compatibility */
+
 #endif
 #include <map>
 #include <list>
