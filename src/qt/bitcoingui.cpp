@@ -66,8 +66,14 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
     rpcConsole(0),
     prevBlocks(0)
 {
-    restoreWindowGeometry();
+    resize(850, 550);
     setWindowTitle(tr("BitQuark") + " - " + tr("Wallet"));
+    // Prevent resizing.
+    setFixedSize(size());
+    // Remove "hand" cursor from status bar.
+    this->statusBar()->setSizeGripEnabled(false);
+
+    this->setStyleSheet(".BitcoinGUI { background-image: url(:/images/background-no-logo); } ");
 #ifndef Q_OS_MAC
     QApplication::setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
