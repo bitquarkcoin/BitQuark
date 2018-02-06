@@ -1,7 +1,7 @@
-Compiling/running bitquarkd unit tests
+Compiling/running bitcoind unit tests
 ------------------------------------
 
-bitquarkd unit tests are in the `src/test/` directory; they
+bitcoind unit tests are in the `src/test/` directory; they
 use the Boost::Test unit-testing framework.
 
 To compile and run the tests:
@@ -27,9 +27,9 @@ use the Qt unit-testing framework.
 
 To compile and run the tests:
 
-	qmake bitquark-qt.pro BITCOIN_QT_TEST=1
+	qmake bitcoin-qt.pro BITCOIN_QT_TEST=1
 	make
-	./bitquark-qt_test
+	./bitcoin-qt_test
 
 To add more tests, add them to the `src/qt/test/` directory,
-the `src/qt/test/test_main.cpp` file, and bitquark-qt.pro.
+the `src/qt/test/test_main.cpp` file, and bitcoin-qt.pro.

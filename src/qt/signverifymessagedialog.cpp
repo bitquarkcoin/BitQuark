@@ -24,10 +24,10 @@ SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
 
 #if (QT_VERSION >= 0x040700)
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->addressIn_SM->setPlaceholderText(tr("Enter a BitQuark address (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQP)"));
+    ui->addressIn_SM->setPlaceholderText(tr("Enter a BitQuark address (e.g. 1XPezk48K6rrW9KLpLUPbSBPnWkV4nsb4)"));
     ui->signatureOut_SM->setPlaceholderText(tr("Click \"Sign Message\" to generate signature"));
 
-    ui->addressIn_VM->setPlaceholderText(tr("Enter a BitQuark address (e.g. 1Mqy13J2SDMbNLP3UasHizWMyEYYCZqFQP)"));
+    ui->addressIn_VM->setPlaceholderText(tr("Enter a BitQuark address (e.g. 1XPezk48K6rrW9KLpLUPbSBPnWkV4nsb4)"));
     ui->signatureIn_VM->setPlaceholderText(tr("Enter BitQuark signature"));
 #endif
 

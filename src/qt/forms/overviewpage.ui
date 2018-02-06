@@ -6,21 +6,9 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>750</width>
-    <height>475</height>
+    <width>843</width>
+    <height>569</height>
    </rect>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>750</width>
-    <height>475</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>750</width>
-    <height>475</height>
-   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -203,12 +191,6 @@
        </item>
        <item>
         <widget class="QLabel" name="label_wallet_bgcoin">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-         <property name="lineWidth">
-          <number>1</number>
-         </property>
          <property name="text">
           <string/>
          </property>
@@ -222,10 +204,10 @@
           <set>Qt::AlignCenter</set>
          </property>
          <property name="margin">
-          <number>0</number>
+          <number>2</number>
          </property>
          <property name="indent">
-          <number>0</number>
+          <number>-1</number>
          </property>
         </widget>
        </item>
@@ -237,7 +219,7 @@
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>5</height>
+           <height>20</height>
           </size>
          </property>
         </spacer>

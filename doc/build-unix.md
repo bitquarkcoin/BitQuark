@@ -82,21 +82,21 @@ Optional:
 Dependency Build Instructions: Gentoo
 -------------------------------------
 
-Note: If you just want to install bitquarkd on Gentoo, you can add the Bitcoin overlay and use your package manager:
+Note: If you just want to install bitcoind on Gentoo, you can add the Bitcoin overlay and use your package manager:
 
-	layman -a bitcoin && emerge bitquarkd
+	layman -a bitcoin && emerge bitcoind
 	emerge -av1 --noreplace boost glib openssl sys-libs/db:4.8
 
 Take the following steps to build (no UPnP support):
 
 	cd ${BITCOIN_DIR}/src
 	make -f makefile.unix USE_UPNP= USE_IPV6=1 BDB_INCLUDE_PATH='/usr/include/db4.8'
-	strip bitquarkd
+	strip bitcoind
 
 
 Notes
 -----
-The release is built with GCC and then "strip bitquarkd" to strip the debug
+The release is built with GCC and then "strip bitcoind" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 

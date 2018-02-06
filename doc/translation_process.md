@@ -7,7 +7,7 @@ handle those translations.
 Files and Folders
 -----------------
 
-### bitquark-qt.pro
+### bitcoin-qt.pro
 
 This file takes care of generating `.qm` files from `.ts` files. It is mostly
 automated.
@@ -39,7 +39,7 @@ so make sure that utility is installed (ie, `apt-get install gettext` on
 Ubuntu/Debian):
 
     python share/qt/extract_strings_qt.py
-    lupdate bitquark-qt.pro -no-obsolete -locations relative -ts src/qt/locale/bitcoin_en.ts
+    lupdate bitcoin-qt.pro -no-obsolete -locations relative -ts src/qt/locale/bitcoin_en.ts
     
 ##### Handling of plurals in the source file
 

@@ -1,4 +1,4 @@
-Mac OS X bitquarkd build instructions
+Mac OS X bitcoind build instructions
 ====================================
 
 Authors
@@ -72,14 +72,14 @@ Installing the dependencies using MacPorts is very straightforward.
 
     sudo port install boost db48@+no_java openssl miniupnpc
 
-### Building `bitquarkd`
+### Building `bitcoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
         git clone git@github.com:bitcoin/bitcoin.git bitcoin
         cd bitcoin
 
-2.  Build bitquarkd:
+2.  Build bitcoind:
 
         cd src
         make -f makefile.osx
@@ -107,7 +107,7 @@ If not, you can ensure that the Brew OpenSSL is correctly linked by running
 
 Rerunning "openssl version" should now return the correct version.
 
-### Building `bitquarkd`
+### Building `bitcoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
@@ -122,7 +122,7 @@ Rerunning "openssl version" should now return the correct version.
 
         patch -p1 < contrib/homebrew/makefile.osx.patch
 
-3.  Build bitquarkd:
+3.  Build bitcoind:
 
         cd src
         make -f makefile.osx
@@ -134,10 +134,10 @@ Rerunning "openssl version" should now return the correct version.
 Creating a release build
 ------------------------
 
-A bitquarkd binary is not included in the Bitcoin-Qt.app bundle. You can ignore
-this section if you are building `bitquarkd` for your own use.
+A bitcoind binary is not included in the Bitcoin-Qt.app bundle. You can ignore
+this section if you are building `bitcoind` for your own use.
 
-If you are building `bitquarkd` for others, your build machine should be set up
+If you are building `bitcoind` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -166,10 +166,10 @@ Once dependencies are compiled, creating `Bitcoin-Qt.app` is easy:
 Running
 -------
 
-It's now available at `./bitquarkd`, provided that you are still in the `src`
+It's now available at `./bitcoind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./bitquarkd` to get the filename where it should be put, or just try these
+Run `./bitcoind` to get the filename where it should be put, or just try these
 commands:
 
     echo -e "rpcuser=sifcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Sifcoin/sifcoin.conf"
@@ -180,6 +180,6 @@ output anything while it's doing this. This process may take several hours.
 
 Other commands:
 
-    ./bitquarkd --help  # for a list of command-line options.
-    ./bitquarkd -daemon # to start the bitcoin daemon.
-    ./bitquarkd help    # When the daemon is running, to get a list of RPC commands
+    ./bitcoind --help  # for a list of command-line options.
+    ./bitcoind -daemon # to start the bitcoin daemon.
+    ./bitcoind help    # When the daemon is running, to get a list of RPC commands

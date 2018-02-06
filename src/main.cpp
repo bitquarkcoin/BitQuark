@@ -1078,12 +1078,12 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 }
 
 static const int64 nGenesisBlockRewardCoin = 1 * COIN;
-static const int64 nBlockRewardStartCoin = 2.5 * COIN; // coins per block
+static const int64 nBlockRewardStartCoin = 2.50 * COIN;
 static const int64 nBlockRewardMinimumCoin = 0.01 * COIN;
 
-static const int64 nTargetTimespan = 10 * 60;
-static const int64 nTargetSpacing = 30;
-static const int64 nInterval = nTargetTimespan / nTargetSpacing;
+static const int64 nTargetTimespan = 10 * 60; // 60*60 //60 minutes
+static const int64 nTargetSpacing = 30; // 60 //60 seconds
+static const int64 nInterval = nTargetTimespan / nTargetSpacing; // 20 blocks
 
 int64 static GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
 {
@@ -4585,8 +4585,16 @@ void static BitcoinMiner(CWallet *pwallet)
         // disable in testing
         while (vNodes.empty())
             MilliSleep(1000);
-            printf("Step after sleep\n");
-
+            //printf("Step after sleep\n");
+		// wait for chain to download
+		while (pindexBest->nHeight + 1000 < Checkpoints::GetTotalBlocksEstimate())
+		{
+			boost::this_thread::interruption_point();
+			MilliSleep(50);
+		}
+		
+		printf("Step after sleep\n");
+		
         //
         // Create new block
         //
@@ -4708,11 +4716,11 @@ void static BitcoinMiner(CWallet *pwallet)
     }
 }
 
-void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
+void GenerateBitcoins(bool fGenerate, int nThreads, CWallet* pwallet)
 {
     static boost::thread_group* minerThreads = NULL;
 
-    int nThreads = GetArg("-genproclimit", -1);
+    //int nThreads = GetArg("-genproclimit", -1);
     if (nThreads < 0)
         nThreads = boost::thread::hardware_concurrency();
 
@@ -4731,6 +4739,12 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
         minerThreads->create_thread(boost::bind(&BitcoinMiner, pwallet));
 }
 
+void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
+{
+	int nThreads = GetArg("-genproclimit", -1);
+	GenerateBitcoins(fGenerate, nThreads, pwallet);
+	}
+	
 // Amount compression:
 // * If the amount is 0, output 0
 // * first, divide the amount (in base units) by the largest power of 10 possible; call the exponent e (e is max 9)

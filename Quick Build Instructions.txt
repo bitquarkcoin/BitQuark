@@ -27,6 +27,3 @@ make
 
 An executable named `bitquark-qt` will be built.
 Alternatively, install `Qt Creator`_ and open the `bitquark-qt.pro` file.
-
-If you get an error related to "leveldb' files, you can download the pre-compiled files from here http://bitquark.info/downloads/leveldb_files.zip
-Just extract these two files and place them in the /src/leveldb/ folder.
