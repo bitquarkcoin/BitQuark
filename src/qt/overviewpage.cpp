@@ -10,6 +10,9 @@
 #include "guiutil.h"
 #include "guiconstants.h"
 
+#include "main.h" // for current block
+#include "bitcoinrpc.h" // for get hash rate
+
 #include <QAbstractItemDelegate>
 #include <QPainter>
 
@@ -148,6 +151,17 @@ void OverviewPage::setBalance(qint64 balance, qint64 unconfirmedBalance, qint64 
     ui->labelImmatureText->setVisible(showImmature);
 }
 
+void OverviewPage::setNetworkInfo(int count, int nTotalBlocks)
+{
+    int unit = walletModel->getOptionsModel()->getDisplayUnit();
+    qint64 total_coins = 0;
+    for(int i=1; i <= nBestHeight; ++i) {
+    	total_coins += _GetBlockValue(i, 0, 0);
+    }
+    ui->labelTotalCoins->setText(BitcoinUnits::formatWithUnit(unit, total_coins));
+    ui->labelHashrate->setText(QString("%1 hps").arg(GetNetworkHashPS(1440, -1)));
+}
+
 void OverviewPage::setNumTransactions(int count)
 {
     ui->labelNumTransactions->setText(QLocale::system().toString(count));
@@ -183,6 +197,8 @@ void OverviewPage::setWalletModel(WalletModel *model)
         // Keep up to date with wallet
         setBalance(model->getBalance(), model->getUnconfirmedBalance(), model->getImmatureBalance());
         connect(model, SIGNAL(balanceChanged(qint64, qint64, qint64)), this, SLOT(setBalance(qint64, qint64, qint64)));
+        setNetworkInfo(clientModel->getNumBlocks(), clientModel->getNumBlocksOfPeers());
+        connect(clientModel, SIGNAL(numBlocksChanged(int,int)), this, SLOT(setNetworkInfo(int,int)));
 
         setNumTransactions(model->getNumTransactions());
         connect(model, SIGNAL(numTransactionsChanged(int)), this, SLOT(setNumTransactions(int)));

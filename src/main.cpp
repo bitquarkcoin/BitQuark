@@ -1106,6 +1106,10 @@ int64 static GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
     return nSubsidy + nFees;
 }
 
+int64 _GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
+{
+    return GetBlockValue( nHeight, nFees, nBits );
+}
 //
 // minimum amount of work that could possibly be required nTime after
 // minimum work required was nBase

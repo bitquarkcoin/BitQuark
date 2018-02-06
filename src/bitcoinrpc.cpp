@@ -212,7 +212,7 @@ static const CRPCCommand vRPCCommands[] =
     { "gethashespersec",        &gethashespersec,        true,      false },
     { "getinfo",                &getinfo,                true,      false },
     { "getmininginfo",          &getmininginfo,          true,      false },
-	{ "getnetworkhashps",       &getnetworkhashps,       true,      false },
+    { "getnetworkhashps",       &getnetworkhashps,       true,      false },
     { "getnewaddress",          &getnewaddress,          true,      false },
     { "getaccountaddress",      &getaccountaddress,      true,      false },
     { "setaccount",             &setaccount,             true,      false },
