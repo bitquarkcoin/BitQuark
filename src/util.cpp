@@ -1108,6 +1108,18 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     	// Create empty bitquark.conf if it does not excist
     	FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
     	if (configFile != NULL)
+		{
+			fprintf(configFile, "rpcuser=SomeUserName\n");
+			fprintf(configFile, "rpcpassword=LongRandomPassword\n");
+			fprintf(configFile, "rpcallowip=127.0.0.1\n");
+			fprintf(configFile, "rpcport=9108\n");
+			fprintf(configFile, "port=9596\n");
+			fprintf(configFile, "gen=0\n");
+			fprintf(configFile, "server=1\n");
+			fprintf(configFile, "addnode=weminebtq.com\n");
+			fprintf(configFile, "addnode=bitquark.info\n");
+			
+		}
     	    fclose(configFile);
     	return; // Nothing to read, so just return
     }
