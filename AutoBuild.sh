@@ -10,8 +10,8 @@ protobuf-compiler libqrencode-dev apache2 apt-cacher-ng python-vm-builder qemu-k
 \
 
 # Get latest BitQuark source
-git clone https://github.com/bitquarkcoin/BitQuark-0.8.3r21.git BTQ-r21
-cd BTQ-r21
+git clone https://github.com/bitquarkcoin/BitQuark.git BTQ
+cd BTQ
 
 # Install libpng (Used for PHP GD Library Extension)
 wget -O- http://sourceforge.net/projects/libpng/files/libpng16/older-releases/1.6.10/libpng-1.6.10.tar.gz | tar -zxf -
