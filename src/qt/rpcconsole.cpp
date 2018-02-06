@@ -335,6 +335,8 @@ void RPCConsole::setNumConnections(int count)
 void RPCConsole::setNumBlocks(int count, int countOfPeers)
 {
     ui->numberOfBlocks->setText(QString::number(count));
+	// Coins Minted
+	ui->numberOfCoins->setText(QString::number(count *2.50));
     // If there is no current countOfPeers available display N/A instead of 0, which can't ever be true
     ui->totalBlocks->setText(countOfPeers == 0 ? tr("N/A") : QString::number(countOfPeers));
     if(clientModel)

@@ -9,10 +9,10 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f) :
     QSplashScreen(pixmap, f)
 {
     // set reference point, paddings
-    int paddingRight            = 50;
-    int paddingTop              = 50;
-    int titleVersionVSpace      = 17;
-    int titleCopyrightVSpace    = 35;
+    int paddingRight            = 15; //50
+    int paddingTop              = 25; //50
+    int titleVersionVSpace      = 17; //17
+    int titleCopyrightVSpace    = 35; //35
 
     float fontFactor            = 1.0;
 
@@ -21,7 +21,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f) :
     QString versionText     = QString("Version %1").arg(QString::fromStdString(FormatFullVersion()));
     QString copyrightText   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin developers"));
     QString copyrightText2  = QChar(0xA9)+QString(" 2013 ") + QString(tr("The Quarkcoin developers"));
-	QString copyrightText3  = QChar(0xA9)+QString(" 2013-2014 ") + QString(tr("The BitQuark developers"));
+	QString copyrightText3  = QChar(0xA9)+QString(" 2014 ") + QString(tr("The BitQuark developers"));
     QString testnetAddText  = QString(tr("[testnet]")); // define text to place as single text object
 
     QString font            = "Arial";

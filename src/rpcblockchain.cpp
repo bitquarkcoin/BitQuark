@@ -178,7 +178,7 @@ Value gettxoutsetinfo(const Array& params, bool fHelp)
         ret.push_back(Pair("txouts", (boost::int64_t)stats.nTransactionOutputs));
         ret.push_back(Pair("bytes_serialized", (boost::int64_t)stats.nSerializedSize));
         ret.push_back(Pair("hash_serialized", stats.hashSerialized.GetHex()));
-        ret.push_back(Pair("total_amount", ValueFromAmount(stats.nTotalAmount)));
+        ret.push_back(Pair("money_supply", ValueFromAmount(stats.nTotalAmount)));
     }
     return ret;
 }

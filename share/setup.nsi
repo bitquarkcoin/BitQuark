@@ -1,13 +1,13 @@
-Name Quark
+Name BitQuark
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.8.3.6
-!define COMPANY "Quark project"
-!define URL http://www.qrk.cc/
+!define VERSION 0.8.3.17
+!define COMPANY "BitQuark project"
+!define URL http://www.bitquark.info/
 
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/bitcoin.ico"
@@ -19,8 +19,8 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER Quark
-!define MUI_FINISHPAGE_RUN $INSTDIR\fairquark-qt.exe
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER BitQuark
+!define MUI_FINISHPAGE_RUN $INSTDIR\bitquark-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
@@ -45,14 +45,14 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile quark-0.8.3r6-win32-setup.exe
-InstallDir $PROGRAMFILES\Quark
+OutFile bitquark-0.8.3r17-win32-setup.exe
+InstallDir $PROGRAMFILES\BitQuark
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 0.8.3.6
-VIAddVersionKey ProductName Quark
+VIProductVersion 0.8.3.17
+VIAddVersionKey ProductName BitQuark
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -66,11 +66,11 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File ../release/fairquark-qt.exe
+    File ../release/bitquark-qt.exe
     File /oname=COPYING.txt ../COPYING
     File /oname=readme.txt ../doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File ../src/fairquarkd.exe
+    File ../src/bitquarkd.exe
     SetOutPath $INSTDIR\src
     File /r /x *.exe /x *.o ../src\*.*
     SetOutPath $INSTDIR
@@ -83,8 +83,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Quark.lnk" $INSTDIR\fairquark-qt.exe
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall Quark.lnk" $INSTDIR\uninstall.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\BitQuark.lnk" $INSTDIR\bitquark-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall BitQuark.lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "${VERSION}"
@@ -94,10 +94,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "quark" "URL Protocol" ""
-    WriteRegStr HKCR "quark" "" "URL:FairQuark"
-    WriteRegStr HKCR "quark\DefaultIcon" "" $INSTDIR\fairquark-qt.exe
-    WriteRegStr HKCR "quark\shell\open\command" "" '"$INSTDIR\fairquark-qt.exe" "%1"'
+    WriteRegStr HKCR "bitquark" "URL Protocol" ""
+    WriteRegStr HKCR "bitquark" "" "URL:BitQuark"
+    WriteRegStr HKCR "bitquark\DefaultIcon" "" $INSTDIR\bitquark-qt.exe
+    WriteRegStr HKCR "bitquark\shell\open\command" "" '"$INSTDIR\bitquark-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -115,7 +115,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\fairquark-qt.exe
+    Delete /REBOOTOK $INSTDIR\bitquark-qt.exe
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -125,9 +125,9 @@ SectionEnd
 
 Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall Quark.lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Quark.lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Quark.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall BitQuark.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\BitQuark.lnk"
+    Delete /REBOOTOK "$SMSTARTUP\BitQuark.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -135,7 +135,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "quark"
+    DeleteRegKey HKCR "bitquark"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

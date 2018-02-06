@@ -1193,8 +1193,12 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-    {"coins.inceptioncraft.net", "coins.inceptioncraft.net"},
-    {"107.170.17.20:9596", "107.170.17.20:9596"},
+    {"62.210.125.140", "62.210.125.140"},
+    {"107.170.17.20", "107.170.17.20"},
+	{"85.25.195.74", "85.25.195.74"},
+	{"217.23.10.247", "217.23.10.247"},
+	{"62.210.178.237", "62.210.178.237"},
+	{"128.2.209.18", "128.2.209.18"},
     {NULL, NULL}
 };
 
@@ -1647,7 +1651,11 @@ bool BindListenPort(const CService &addrBind, string& strError)
     // and enable it by default or not. Try to enable it, if possible.
     if (addrBind.IsIPv6()) {
 #ifdef IPV6_V6ONLY
+#ifdef WIN32
+        setsockopt(hListenSocket, IPPROTO_IPV6, IPV6_V6ONLY, (const char*)&nOne, sizeof(int));
+#else        
         setsockopt(hListenSocket, IPPROTO_IPV6, IPV6_V6ONLY, (void*)&nOne, sizeof(int));
+#endif
 #endif
 #ifdef WIN32
         int nProtLevel = 10 /* PROTECTION_LEVEL_UNRESTRICTED */;
