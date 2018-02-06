@@ -1111,6 +1111,37 @@ int64 _GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
 {
     return GetBlockValue( nHeight, nFees, nBits );
 }
+
+int64 GetMoneySupply(int nHeight, int64 nFees, unsigned int nBits)
+{
+    return GetBlockValue( nHeight, nFees, nBits );
+}
+
+int64_t GetPoWSubsidy(int64_t nHeight)
+{
+    int64 nSubsidy = nBlockRewardStartCoin;
+
+    // Subsidy is cut in half every 4204800 blocks (4 years)
+    nSubsidy >>= (nHeight / 4204800);
+    
+    // Minimum subsidy
+    if (nSubsidy < nBlockRewardMinimumCoin)
+    {
+        nSubsidy = nBlockRewardMinimumCoin;
+    }
+
+    return nSubsidy;
+}
+
+int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
+{
+    int64_t nSubsidy = GetPoWSubsidy(nHeight);
+
+    if (fDebug && GetBoolArg("-printcreation"))
+        printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRI64d"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
+
+    return nSubsidy + nFees;
+}
 //
 // minimum amount of work that could possibly be required nTime after
 // minimum work required was nBase

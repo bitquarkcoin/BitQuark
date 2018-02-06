@@ -186,8 +186,10 @@ bool VerifySignature(const CCoins& txFrom, const CTransaction& txTo, unsigned in
 bool AbortNode(const std::string &msg);
 /** Access to GetBlockValue for unit tests */
 int64 _GetBlockValue(int nHeight, int64 nFees, unsigned int nBits);
-
-
+/** Access to GetMoneySupply for unit tests */
+int64 GetMoneySupply(int nHeight, int64 nFees, unsigned int nBits);
+/** Access to GetProofOfWorkReward for unit tests */
+int64_t GetProofOfWorkReward(int nHeight, int64_t nFees);
 
 
 
