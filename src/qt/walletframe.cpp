@@ -8,11 +8,9 @@
 #include "bitcoingui.h"
 #include "walletstack.h"
 
-#include <QVBoxLayout>
+#include <QHBoxLayout> //#include <QVBoxLayout>
 #include <QMessageBox>
-
-#include <stdio.h>
-
+//#include <stdio.h>
 WalletFrame::WalletFrame(BitcoinGUI *_gui) :
     QFrame(_gui),
     gui(_gui),

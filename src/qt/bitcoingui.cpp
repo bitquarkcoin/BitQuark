@@ -44,7 +44,9 @@
 #include <QMovie>
 #include <QTimer>
 #include <QDragEnterEvent>
+#if QT_VERSION < 0x050000
 #include <QUrl>
+#endif
 #include <QMimeData>
 #include <QStyle>
 #include <QSettings>
@@ -69,7 +71,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
 {
     restoreWindowGeometry();
 	resize(949, 527);
-    setWindowTitle(tr("BitQuark Wallet") + " - " + tr("v0.8.3.18"));
+    setWindowTitle(tr("BitQuark Wallet") + " - " + tr("v0.8.3.19"));
     // Prevent resizing.
     setFixedSize(size());
     // Remove "hand" cursor from status bar.

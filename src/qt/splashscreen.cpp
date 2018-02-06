@@ -9,10 +9,10 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f) :
     QSplashScreen(pixmap, f)
 {
     // set reference point, paddings
-    int paddingRight            = 15; //50
-    int paddingTop              = 25; //50
-    int titleVersionVSpace      = 17; //17
-    int titleCopyrightVSpace    = 35; //35
+    int paddingRight            = 10; //10
+    int paddingTop              = 25; //25
+    int titleVersionVSpace      = 15; //15
+    int titleCopyrightVSpace    = 25; //25
 
     float fontFactor            = 1.0;
 
@@ -20,8 +20,8 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f) :
     QString titleText       = QString(QApplication::applicationName()).replace(QString("-testnet"), QString(""), Qt::CaseSensitive); // cut of testnet, place it as single object further down
     QString versionText     = QString("Version %1").arg(QString::fromStdString(FormatFullVersion()));
     QString copyrightText   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin developers"));
-    QString copyrightText2  = QChar(0xA9)+QString(" 2013 ") + QString(tr("The Quarkcoin developers"));
-	QString copyrightText3  = QChar(0xA9)+QString(" 2014 ") + QString(tr("The BitQuark developers"));
+    QString copyrightText2  = QChar(0xA9)+QString(" 2013-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Quarkcoin developers"));
+	QString copyrightText3  = QChar(0xA9)+QString(" 2014-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The BitQuark developers"));
     QString testnetAddText  = QString(tr("[testnet]")); // define text to place as single text object
 
     QString font            = "Arial";
