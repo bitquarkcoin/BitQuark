@@ -30,7 +30,7 @@ You need the Qt4 run-time libraries to run BitQuark-Qt. On Debian or Ubuntu:
 
 `sudo apt-get -y install gcc g++ autoconf automake make git zip unzip qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev libprotobuf-dev protobuf-compiler libqrencode-dev`
 
-`cd BitQuark-0.8.3r21`
+`cd BitQuark`
 
 ` wget -O- http://sourceforge.net/projects/libpng/files/libpng16/older-releases/1.6.10/libpng-1.6.10.tar.gz | tar -zxf -`
 
