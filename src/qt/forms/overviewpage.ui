@@ -36,7 +36,16 @@
       <string notr="true"/>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
-      <property name="margin">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
        <number>0</number>
       </property>
       <item>
@@ -124,6 +133,7 @@
               <widget class="QLabel" name="labelBalance">
                <property name="font">
                 <font>
+                 <pointsize>10</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
@@ -159,6 +169,7 @@
               <widget class="QLabel" name="labelUnconfirmed">
                <property name="font">
                 <font>
+                 <pointsize>10</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
@@ -194,6 +205,7 @@
               <widget class="QLabel" name="labelImmature">
                <property name="font">
                 <font>
+                 <pointsize>10</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
@@ -223,6 +235,7 @@
               <widget class="QLabel" name="labelNumTransactions">
                <property name="font">
                 <font>
+                 <pointsize>10</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
@@ -246,6 +259,7 @@
               <widget class="QLabel" name="labelTotalCoins">
                <property name="font">
                 <font>
+                 <pointsize>10</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
@@ -266,6 +280,7 @@
               <widget class="QLabel" name="labelHashrate">
                <property name="font">
                 <font>
+                 <pointsize>10</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
@@ -313,7 +328,7 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>20</height>
+            <height>15</height>
            </size>
           </property>
          </spacer>
